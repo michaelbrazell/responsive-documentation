@@ -2,7 +2,7 @@
 Theme Name: MathWorks Web Standards Documentation
 Author: MathWorks (Ryan Johnson x7096)
 Description: MathWorks Web Standards Documentation Custom WordPress Theme
-Version: 1.0.0
+Version: 1.2.0
 Text Domain: responsive-documentation
 */
 
@@ -220,4 +220,3 @@ object {
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
 }
-
