@@ -1,0 +1,79 @@
+<?php
+/**
+ * The header for our theme.
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package responsive-documentation
+ */
+
+?>
+<?php
+// Set the track to pull all includes_content files from
+$ic_track = get_field('release_track', 102);
+$ic_track_mini = ltrim($ic_track, "http:/\/\www");
+$ic_track_mini = ltrim($ic_track_mini, "-");
+$ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>><head>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<?php wp_head(); ?>
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6.css?201507" rel="stylesheet" type="text/css">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_sm+xs.css" rel="stylesheet" media="screen and (max-width: 991px)">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_xs.css" rel="stylesheet" media="screen and (max-width: 767px)">
+<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/jquery/jquery-latest.js"></script>
+<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/jquery/jquery.mobile.custom.min.js"></script>
+<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/bootstrap/bootstrap.min.js"></script>
+<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/global.js"></script>
+<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/anchor.js"></script>
+<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/bootstrap/responsive-tabs.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700italic' rel='stylesheet' type='text/css'>
+<link href="<?php echo get_template_directory_uri(); ?>/css/responsive_doc.css" rel="stylesheet" type="text/css">
+<script src="<?php echo get_template_directory_uri(); ?>/js/responsive_doc.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/offcanvas.js"></script>
+<script src="https://fonts.mathworks.com/xvy5baa.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body <?php body_class(); ?>>
+<div id="page" class="site">
+  <div class="topnav_container">
+    <div class="navbar navbar-fixed-top navbar-default">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+            <div class="nav_control">
+              <button type="button" class="navbar-toggle" data-toggle="offcanvas" id="nav_toggle" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-menu-reverse icon_32"></span>
+                <span class="nav-control-label">menu</span>
+              </button>
+            </div>
+            <div class="navbar-header">
+              <a class="navbar-brand" href="<?php echo site_url(); ?>">MathWorks Web Standards Documentation</a>
+              <span class="includes_contract_track">inclues_content track: <?php echo $ic_track_mini; ?></span>
+            </div>
+          </div>
+          <div class="col-sm-4 hidden-xs">
+            <form role="search" method="get" class="search-form navbar-form navbar-right" action="<?php echo site_url(); ?>">
+              <div class="input-group">
+                <input type="search" id="search-field" class="search-field form-control" placeholder="Search …" value="" name="s" title="Search for:">
+                <span class="input-group-btn">
+                <input type="submit" class="search-submit btn btn-primary" value="Go!">
+                </span> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<div id="content" class="site-content">

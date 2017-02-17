@@ -1,0 +1,194 @@
+@import url('http://www-test1.mathworks.com/includes_content/responsive/css/bootstrap/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700italic');
+
+
+/*-----------------------------------
+   Globals
+-----------------------------------*/
+html body { padding:15px; color:#333; font:normal 400 18px/1.333 'Roboto', sans-serif; }
+
+body.wp-autoresize { margin:15px; }
+
+/*-----------------------------------
+   Bootstrap Overrides
+-----------------------------------*/
+
+
+
+/*-----------------------------------
+   Site Elements
+-----------------------------------*/
+h1 { padding:0; margin:0 0 15px; color:#333; font:normal 700 32px/1.333 'Roboto', sans-serif; }
+h2 { padding:10px 0 0; margin:0 0 40px; border-top:7px solid #e1e1e1; color:#a4a4a4; font:normal 400 28px/1.333 'Roboto', sans-serif; }
+h3 { padding:0; margin:0 0 5px; color:#333; font:normal 700 18px/1.333 'Roboto', sans-serif; }
+h4 { padding:3px 5px; margin:0 0 10px; background:#b7b7b7; color:#fff; font:normal 500 16px/1.333 'Roboto', sans-serif; }
+h5 { padding:0; margin:0 0 5px; color:#666; font:normal 500 14px/1.333 'Roboto', sans-serif; }
+
+strong { font-family: 'Roboto', sans-serif; font-weight:700; }
+strong em,
+em strong { font-family: 'Roboto', sans-serif; font-weight:700; font-style:italic; }
+
+a,
+a:visited { color:#00a1d9; text-decoration:none; }
+a:hover { color:#00a1d9; text-decoration:underline; }
+
+.recommendations_do { color:#009915; text-transform:uppercase; }
+.recommendations_dont { color:#b72126; text-transform:uppercase; }
+
+.component_type { color:#187dbb; color:#333; }
+
+.doc_swatch { width:25px; height:25px; border:1px solid #ccc; text-indent:-9999px; }
+
+.btn_secondary { border-radius:4px 4px 0 0; outline:none !important; transition:all ease-in-out .3s; }
+.btn_secondary.collapsed { border-radius:4px; }
+.btn_secondary:focus,
+.btn_secondary:active { box-shadow:none; }
+
+.doc_key { width: 25px; height: 25px; padding: 6px 7px 7px 7px; margin: 0 20px 15px 0; border-radius: 50%; background-color: #0072bc; color: #fff; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; float: left; text-align: center; }
+
+.hi-lite { padding:0 2px; border-radius:5px; background-color:#54d0ff; background-color:rgba(0,161,217,.2); display:inline-block; }
+.hi-lite-02 { padding:0 2px; border-radius:5px; background-color:#00ff00; background-color:rgba(0,255,0,.15); display:inline-block; }
+  
+.doc_color_chip_container { max-width:165px; margin:0 auto; position:relative; }
+.doc_color_chip_content {  padding-bottom:20px; margin-bottom:15px; border:2px solid #e1e1e1; text-align:center; background:#fff; }
+.doc_color_chip_swatch { height:65px; padding:5px 0; margin:1px 1px 20px; text-indent:-9999px; }
+.doc_color_chip_content *:last-child { margin-bottom:0; }
+
+.doc_color_chip_container li { font-size:83%; font-style:italic; }
+.doc_color_chip_container .doc_key { width:18px; height:18px; padding:3px 0 0; margin:0 5px 5px 5px; display:block; font-size:11px; text-indent:-1px; }
+.doc_color_chip_container .doc_key_absolute { position:absolute; }
+.doc_color_chip_container .doc_color_chip_swatch .doc_key { background:#fff; color:#004b87; }
+
+.spacing-grid-example { padding:0 15px; }	 	 
+.spacing-grid-example .row { border-top:1px dotted #999; border-right:1px dotted #999; }	 	 
+.spacing-grid-example .row + .row { border-top:none; }	 	 
+.spacing-grid-example div[class*="col-xs-"] { border-bottom:1px dotted #999; border-left:1px dotted #999; }	 	 
+.spacing-grid-example div[class*="col-xs-"] div { background:#f5f5f5; color:#999; text-align:center; }	 
+
+
+/* ------------------------------------
+$ Additive CSS
+------------------------------------ */
+
+/* ---- Additive / Reductive CSS ---- */
+
+	/* Add */
+
+		/* Add: Borders */	
+		.add_border { border: 1px solid #ccc; }
+
+		/* Add: Clear */	
+		.add_clear_right { clear:right; }
+		.add_clear_left { clear:left; }
+		.add_clear_both { clear:both; }
+
+  	/* Add: Cursor Pointer */	
+		.add_cursor_pointer { cursor: pointer; }
+    
+		/* Add: Emphasis */	    
+    .add_emphasis { color:#ff8300; }
+    
+		/* Add: Indent  */	
+		.add_indent_5 { margin-left: 5px !important; }
+		.add_indent_10 { margin-left: 10px !important; }
+		.add_indent_15 { margin-left: 15px !important; }
+		.add_indent_20 { margin-left: 20px !important; }
+		.add_indent_25 { margin-left: 25px !important; }
+		.add_indent_30 { margin-left: 30px !important; }
+
+		/* Add: List Spacing */
+		.add_list_spacing_3 li { margin-bottom: 3px; }
+		.add_list_spacing_5 li { margin-bottom: 5px; }
+		.add_list_spacing_7 li { margin-bottom: 7px; }
+		.add_list_spacing_10 li { margin-bottom: 10px; }
+		.add_list_spacing_12 li { margin-bottom: 12px; }
+		.add_list_spacing_15 li { margin-bottom: 15px; }
+
+		.add_list_spacing_3 li > ul { padding-top: 3px; }
+		.add_list_spacing_5 li > ul { padding-top: 5px; }
+		.add_list_spacing_7 li > ul { padding-top: 7px; }
+		.add_list_spacing_10 li > ul { padding-top: 10px; }
+		.add_list_spacing_12 li > ul { padding-top: 12px; }
+		.add_list_spacing_15 li > ul { padding-top: 15px; }
+
+		/* Add: Margin-Bottom */
+		.add_margin_0 { margin-bottom: 0 !important; }
+		.add_margin_5 { margin-bottom: 5px !important; }
+		.add_margin_10 { margin-bottom: 10px !important; }
+		.add_margin_15 { margin-bottom: 15px !important; }
+		.add_margin_20 { margin-bottom: 20px !important; }
+		.add_margin_25 { margin-bottom: 25px !important; }
+		.add_margin_30 { margin-bottom: 30px !important; }
+		.add_margin_35 { margin-bottom: 35px !important; }
+		.add_margin_40 { margin-bottom: 40px !important; }
+		.add_margin_45 { margin-bottom: 45px !important; }
+		.add_margin_50 { margin-bottom: 50px !important; }
+		.add_margin_60 { margin-bottom: 60px !important; }
+		.add_margin_70 { margin-bottom: 70px !important; }
+		.add_margin_75 { margin-bottom: 75px !important; }    
+		.add_margin_80 { margin-bottom: 80px !important; }
+		.add_margin_90 { margin-bottom: 90px !important; }
+		.add_margin_100 { margin-bottom: 100px !important; }
+    
+		/* Add: Text Transform  */
+    .add_text_transform_lowercase { text-transform:lowercase; }
+    .add_text_transform_uppercase { text-transform:uppercase; }    
+
+
+/* ---- Tables ---- */
+
+	/* Tables: Table Width */
+	table.table_20 { width: 20%; }
+	table.table_25 { width: 25%; }
+	table.table_33 { width: 33.3333%; }
+	table.table_35 { width: 35%; }
+	table.table_40 { width: 40%; }
+	table.table_50 { width: 50%; }
+	table.table_60 { width: 60%; }
+	table.table_65 { width: 65%; }
+	table.table_66 { width: 66.6666%; }
+	table.table_70 { width: 70%; }
+	table.table_100 { width: 100%; }
+
+
+	/* Tables: Table-Cell Width */
+	.cell_5 { width: 5%; }
+	.cell_10 { width: 10%; }
+	.cell_15 { width: 15%; }
+	.cell_20 { width: 20%; }
+	.cell_25 { width: 25%; }
+	.cell_30 { width: 30%; }
+	.cell_33 { width: 33.333%; }
+	.cell_35 { width: 35%; }
+	.cell_40 { width: 40%; }
+	.cell_45 { width: 45%; }
+	.cell_50 { width: 50%; }
+	.cell_55 { width: 55%; }
+	.cell_60 { width: 60%; }
+	.cell_65 { width: 65%; }
+	.cell_66 { width: 66.666%; }
+	.cell_70 { width: 70%; }
+	.cell_75 { width: 75%; }
+	.cell_80 { width: 80%; }
+	.cell_85 { width: 85%; }
+	.cell_90 { width: 90%; }
+	.cell_95 { width: 95%; }
+
+
+	/* Tables: Table-Cell Padding */
+	td.padded_5,
+	table.padded_5 td { padding: 5px; }
+	
+	td.padded_10,
+	table.padded_10 td { padding: 10px; }
+	
+	td.padded_15,
+	table.padded_15 td { padding: 15px; }
+
+	td.padded_20,
+	table.padded_20 td { padding: 20px; }
+
+
+	/* Tables: Table-Cell Vertical Alignment */
+	td.valign_center { vertical-align: middle; }
+	td.valign_bottom { vertical-align: bottom; }
