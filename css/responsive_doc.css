@@ -133,6 +133,8 @@ h5.wp_responsive_doc,
 .wp_responsive_doc .panel-body .table td p { margin-left:0; }
 .wp_responsive_doc table td *:last-child { margin-bottom: 0; }
 
+.wp_responsive_doc .panel-body [class*="col-"] img { margin-left: 0; }
+
 .wp_responsive_doc table td small { display:block; }
 .wp_responsive_doc .panel-body table td pre { margin-left:10px; margin-right:10px; }
 .wp_responsive_doc .panel-body table td p.code_desc { margin-left:10px; margin-right:10px; }
