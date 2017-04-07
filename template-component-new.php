@@ -57,9 +57,9 @@
 
 
               <!-- Elements Content: START -->
-              <?php $component_elements = get_field('component_elements'); ?>
-              <?php if ($component_elements) { ?>
-                  <?php foreach($component_elements as $post): ?>
+              <?php $associated_elements = get_field('associated_elements'); ?>
+              <?php if ($associated_elements) { ?>
+                  <?php foreach($associated_elements as $post): ?>
 
                     <h2 class="wp_responsive_doc" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?></span></h2>
                     <?php
