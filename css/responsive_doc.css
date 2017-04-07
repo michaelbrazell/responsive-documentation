@@ -303,6 +303,12 @@ h5.wp_responsive_doc,
     }
   
 
+  /* ---- TOC ---- */
+  .wp_responsive_doc_toc { padding:0 15px 15px; background:#f4f4f4; font-size:14px; }
+  .wp_responsive_doc_toc h2 { padding:7px 15px 5px; margin:0 -15px 12px; border-top:none; background:#31373d; color:#fff; font-size:18px; }
+  .wp_responsive_doc_toc h3 { font-size:15px; font-weight:400; }
+  .wp_responsive_doc_toc ul { margin-bottom:10px; }
+
 
   /* ---- Comments ---- */
   .comments_container { padding:0 0 30px; border-top: 7px solid #e1e1e1; background:#f5f5f5; font-family:'Roboto', sans-serif; }
