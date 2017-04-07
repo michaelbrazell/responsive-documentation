@@ -61,9 +61,105 @@
               <?php if ($component_elements) { ?>
                   <?php foreach($component_elements as $post): ?>
 
+                    <h2 class="wp_responsive_doc" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?></span></h2>
+                    <?php
+                      //Determine how many HTML examples there are
+                      $interactive_example_count = count(get_field('component_markup'));
+                      
+                      if (get_field('component_interactive_markup_grid')) {
+                      
+                        $interactive_example_requested_grid = (get_field('component_interactive_markup_grid'));
+                        $interactive_example_grid = "col-xs-12 col-md-" . $interactive_example_requested_grid . "\"";
+                        
+                      } else { 
+                      
+                        if ($interactive_example_count == 1) {
+                          $interactive_example_grid = "col-xs-12";
+                        } elseif ($interactive_example_count == 2) {                    
+                          $interactive_example_grid = "col-xs-12 col-md-6";
+                        } elseif ($interactive_example_count >= 3) {                      
+                          $interactive_example_grid = "col-xs-12 col-md-4";
+                        }
+                        
+                      }
+                    ?>
+                    <div class="row add_margin_30">
+                      <?php $component_sample_counter = 1; ?>
+                      <?php while (have_rows('component_markup')) : the_row(); ?>               
+                        <div class="<?php echo $interactive_example_grid; ?>">
+                          <?php if ($interactive_example_count > 1) { ?>
+                            <div class="doc_key"><?php echo $component_sample_counter; ?></div>
+                            <div class="clearfix"></div>
+                            
+                          <?php } ?> 
+                          <?php if (get_sub_field('component_interactive_markup_title')) { ?>
+                            <h4 class="wp_responsive_doc"><?php the_sub_field('component_interactive_markup_title'); ?></h4>
+                          <?php } ?>                                                
+                          <?php the_sub_field('component_interactive_markup'); ?>
+                        </div>
+                        <?php if ($interactive_example_requested_grid) { ?>
+                          <?php if ($interactive_example_requested_grid == 12) { ?>
+                            <div class="clearfix"></div>
+                          <?php } ?>
+                          <?php if (($interactive_example_requested_grid == 6) && ($component_sample_counter % 2 == 0)) { ?>
+                            <div class="clearfix"></div>
+                          <?php } ?>
+                          <?php if (($interactive_example_requested_grid == 4) && ($component_sample_counter % 3 == 0)) { ?>
+                            <div class="clearfix"></div>
+                          <?php } ?>  
+                          <?php if (($interactive_example_requested_grid == 3) && ($component_sample_counter % 4 == 0)) { ?>
+                            <div class="clearfix"></div>
+                          <?php } ?>                       
+                        <?php } else { ?>
+                          <?php if (($interactive_example_count == 4) && ($component_sample_counter == 3)) { ?>
+                            <div class="clearfix"></div>
+                          <?php } ?>                                                  
+                        <?php } ?>
+                        <?php $component_sample_counter++; ?>
+                      <?php endwhile; ?>
+                    </div>
 
-
-
+                    <section class="wp_responsive_doc add_margin_60">
+                      <button class="btn btn_secondary collapsed" role="button" data-toggle="collapse" href="#individual_component_detail_<?php echo get_the_ID(); ?>" aria-expanded="false" aria-controls="individual_component_detail_<?php echo get_the_ID(); ?>">Detailed Configuration Information for <?php the_field('component_variation_name'); ?></button>                
+                      <div class="panel panel-default collapse" id="individual_component_detail_<?php echo get_the_ID(); ?>" aria-expanded="false">
+                        <div class="panel-body">
+                          <?php if (get_field('component_description')) { ?>
+                            <h3>Description</h3>
+                            <?php the_field('component_description'); ?>
+                          <?php } ?>
+                          <?php if (get_field('component_use')) { ?>
+                            <h3>Usage Guidelines</h3>
+                            <?php the_field('component_use'); ?>
+                          <?php } ?> 
+                          <?php if ((get_field('component_options')) || (get_sub_field('component_options_html'))) { ?>
+                            <h3>Design and Implementation Options</h3>
+                            <?php if (get_field('component_options_html')) { ?>
+                              <?php the_field('component_options_html'); ?>
+                            <?php } else { ?>
+                              <?php the_field('component_options'); ?>
+                            <?php } ?>
+                          <?php } ?>  
+                          <?php if (have_rows('component_markup')) { ?>
+                            <h3>Markup</h3>
+                            <?php $component_markup_counter = 1; ?>
+                            <?php while (have_rows('component_markup')) : the_row(); ?>
+                              <?php $component_sample_markup = get_sub_field('component_sample_markup'); ?>         
+                              <?php if ($interactive_example_count > 1) { ?>
+                                <div class="doc_key"><?php echo $component_markup_counter; ?></div>
+                              <?php } ?>
+  <pre>
+  <?php the_sub_field('component_sample_markup'); ?>
+  </pre>
+                              <?php $component_markup_counter++; ?>
+                            <?php endwhile; ?>
+                          <?php } ?>
+                          <?php if (get_field('component_additional_markup')) { ?>
+                            <?php the_field('component_additional_markup'); ?>
+                          <?php } ?>                          
+                        </div>
+                      </div>
+                      <div class="clearfix add_margin_30"></div>
+                    </section>
 
                   <?php endforeach; ?>
                 <?php wp_reset_postdata(); ?>
