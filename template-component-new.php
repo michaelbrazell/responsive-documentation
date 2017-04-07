@@ -147,9 +147,9 @@
                               <?php if ($interactive_example_count > 1) { ?>
                                 <div class="doc_key"><?php echo $component_markup_counter; ?></div>
                               <?php } ?>
-  <pre>
-  <?php the_sub_field('component_sample_markup'); ?>
-  </pre>
+<pre>
+<?php the_sub_field('component_sample_markup'); ?> 
+</pre>
                               <?php $component_markup_counter++; ?>
                             <?php endwhile; ?>
                           <?php } ?>
