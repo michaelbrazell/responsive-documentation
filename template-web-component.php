@@ -83,7 +83,7 @@
                       
                     }
                   ?>
-                  <div class="row add_margin_30">
+                  <div class="row">
                     <?php $component_sample_counter = 1; ?>
                     <?php while (have_rows('component_markup')) : the_row(); ?>               
                       <div class="<?php echo $interactive_example_grid; ?>">
@@ -197,7 +197,7 @@
                       
                     }
                   ?>
-                  <div class="row add_margin_30">
+                  <div class="row">
                     <?php $component_sample_counter = 1; ?>
                     <?php while (have_rows('component_markup')) : the_row(); ?>               
                       <div class="<?php echo $interactive_example_grid; ?>">
