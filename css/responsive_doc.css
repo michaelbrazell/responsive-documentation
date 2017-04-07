@@ -168,7 +168,9 @@ h5.wp_responsive_doc,
 -----------------------------------*/
 
   /* ---- TopNav ---- */
-  .navbar { min-height:70px; margin-bottom:0; padding:17px 0 0; border:none; }
+  .navbar { min-height:70px; margin-bottom:0; padding:0; border:none; }
+
+  .topnav_container { padding-top:17px; }
 
   .navbar-default { background:#31373d; color:#fff; font:normal 400 14px/1.00 'Roboto', sans-serif; }
 

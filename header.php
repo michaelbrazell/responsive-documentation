@@ -46,8 +46,8 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-  <div class="topnav_container">
-    <div class="navbar navbar-fixed-top navbar-default">
+  <div class="navbar navbar-fixed-top navbar-default sticky_header_container">
+    <div class="topnav_container">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12 col-sm-8">
