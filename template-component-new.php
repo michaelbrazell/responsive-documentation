@@ -99,20 +99,20 @@
                         </div>
                         <?php if ($interactive_example_requested_grid) { ?>
                           <?php if ($interactive_example_requested_grid == 12) { ?>
-                            <div class="clearfix"></div>
+                            <div class="clearfix add_margin_30"></div>
                           <?php } ?>
                           <?php if (($interactive_example_requested_grid == 6) && ($component_sample_counter % 2 == 0)) { ?>
-                            <div class="clearfix"></div>
+                            <div class="clearfix add_margin_30"></div>
                           <?php } ?>
                           <?php if (($interactive_example_requested_grid == 4) && ($component_sample_counter % 3 == 0)) { ?>
-                            <div class="clearfix"></div>
+                            <div class="clearfix add_margin_30"></div>
                           <?php } ?>  
                           <?php if (($interactive_example_requested_grid == 3) && ($component_sample_counter % 4 == 0)) { ?>
-                            <div class="clearfix"></div>
+                            <div class="clearfix add_margin_30"></div>
                           <?php } ?>                       
                         <?php } else { ?>
                           <?php if (($interactive_example_count == 4) && ($component_sample_counter == 3)) { ?>
-                            <div class="clearfix"></div>
+                            <div class="clearfix add_margin_30"></div>
                           <?php } ?>                                                  
                         <?php } ?>
                         <?php $component_sample_counter++; ?>
