@@ -15,9 +15,40 @@
               <!-- WP Editor: START -->
               <section class="wp_responsive_doc add_margin_30">
                 <h1><?php the_title(); ?></h1>
-                <?php while ( have_posts() ) : the_post(); ?>
-                  <?php the_content(); ?>
-                <?php endwhile; // end of the loop. ?>
+                
+                <div class="row">
+                  <div class="col-xs-12 col-sm-9">
+                    <?php while ( have_posts() ) : the_post(); ?>
+                      <?php the_content(); ?>
+                    <?php endwhile; // end of the loop. ?>
+                  </div>
+                  <div class="col-xs-12 col-sm-3">
+                    <div class="wp_responsive_doc wp_responsive_doc_toc">
+                      <h2><?php the_title(); ?> Table of Contents</h2>
+                      <?php $associated_elements = get_field('associated_elements'); ?>
+                      <?php if ($associated_elements) { ?>
+                        <ul class="list-unstyled">
+                          <?php foreach($associated_elements as $post): ?>
+                            <li><a href="#element_<?php echo get_the_ID(); ?>"><?php the_field('component_variation_name'); ?></a></li>
+                          <?php endforeach; ?>
+                        </ul>
+                      <?php wp_reset_postdata(); ?>
+                      <?php } ?>
+
+                      <?php $associated_elements_addons = get_field('associated_elements_addons'); ?>
+                      <?php if ($associated_elements_addons) { ?>
+                        <h3 class="wp_responsive_doc">Additional <?php the_title(); ?> Options</h3>
+                        <ul class="list-unstyled">
+                          <?php foreach($associated_elements_addons as $post): ?>
+                            <li><a href="#element_<?php echo get_the_ID(); ?>"><?php the_field('component_variation_name'); ?></a></li>
+                          <?php endforeach; ?>
+                        </ul>
+                      <?php wp_reset_postdata(); ?>
+                      <?php } ?>
+                    </div>                                                                
+                  </div>
+                </div>
+
 
                 <!-- Working Examples: START -->
                 <?php if(have_rows('working_examples')) { ?>
@@ -29,6 +60,7 @@
                   </ul>
                 <?php } ?>
                 <!-- Working Examples: END -->
+
 
                 <!-- Related Components: START -->
                 <?php $related_components = get_field('related_components'); ?>
