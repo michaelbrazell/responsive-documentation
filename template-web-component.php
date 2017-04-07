@@ -37,7 +37,7 @@
 
                       <?php $associated_elements_addons = get_field('associated_elements_addons'); ?>
                       <?php if ($associated_elements_addons) { ?>
-                        <h3 class="wp_responsive_doc">Additional <?php the_title(); ?> Options</h3>
+                        <h3 class="wp_responsive_doc">Additional Component Options</h3>
                         <ul class="list-unstyled">
                           <?php foreach($associated_elements_addons as $post): ?>
                             <li><a href="#element_<?php echo get_the_ID(); ?>"><?php the_field('component_variation_name'); ?></a></li>
