@@ -24,7 +24,7 @@
                   </div>
                   <div class="col-xs-12 col-sm-3">
                     <div class="wp_responsive_doc wp_responsive_doc_toc">
-                      <h2>Component TOC</h2>
+                      <h2>Table of Contents</h2>
                       <?php $associated_elements = get_field('associated_elements'); ?>
                       <?php if ($associated_elements) { ?>
                         <ul class="list-unstyled">
