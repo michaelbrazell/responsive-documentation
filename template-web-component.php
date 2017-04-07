@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Component NEW-Template
+ * Template Name: Web Component-Template
  *
  * @package responsive-documentation
  */
