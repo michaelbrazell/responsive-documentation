@@ -377,7 +377,7 @@
 <script>  
 (function($) {
 
-$('#collection_zoom').on('show.bs.modal', function (event) {
+$('#component_markup').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient_alt = button.data('alt') // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
