@@ -359,7 +359,7 @@
 
 
 <!-- Code Modal: START -->
-<div class="modal fade" id="component_markup" tabindex="-1" role="dialog">
+<div class="modal fade" id="component_markup_modal" tabindex="-1" role="dialog">
   <div class="modal-dialog wp_responsive_doc">
     <div class="modal-content">
       <div class="modal-header">
@@ -377,7 +377,7 @@
 <script>  
 (function($) {
 
-$('#component_markup').on('show.bs.modal', function (event) {
+$('#component_markup_modal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient_alt = button.data('alt') // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
