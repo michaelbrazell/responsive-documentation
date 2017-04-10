@@ -300,7 +300,7 @@ h5.wp_responsive_doc,
   
 
   /* ---- TOC ---- */
-  .wp_responsive_doc_toc { padding:0 15px 15px; background:#f4f4f4; font-size:14px; }
+  .wp_responsive_doc_toc { padding:0 15px 15px; margin-top:8px; background:#f4f4f4; font-size:14px; }
   .wp_responsive_doc_toc h2 { padding:7px 15px 5px; margin:0 -15px 12px; border-top:none; background:#31373d; color:#fff; font-size:18px; }
   .wp_responsive_doc_toc h3 { font-size:15px; font-weight:400; }
   .wp_responsive_doc_toc ul { margin-bottom:10px; }
