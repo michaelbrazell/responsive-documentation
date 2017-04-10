@@ -14,10 +14,9 @@
             <div class="col-xs-12">
               <!-- WP Editor: START -->
               <section class="wp_responsive_doc add_margin_30">
-                <h1><?php the_title(); ?></h1>
-                
                 <div class="row">
                   <div class="col-xs-12 col-sm-8 col-md-9">
+                    <h1><?php the_title(); ?></h1>
                     <?php while ( have_posts() ) : the_post(); ?>
                       <?php the_content(); ?>
                     <?php endwhile; // end of the loop. ?>
