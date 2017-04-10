@@ -437,6 +437,10 @@ h5.wp_responsive_doc,
   #footer.wp_responsive_doc { padding-top:0; background:#31373d; }
   .wp_responsive_doc .footer { min-height:10px; padding:18px 0; color:rgba(255,255,255,0.3); font-size:14px; font-weight:400; }
 
+    @media (max-width:767px) {
+      .wp_responsive_doc .footer { padding-bottom:18px !important; }
+    }
+
 
 /*-----------------------------------
    Responsive
