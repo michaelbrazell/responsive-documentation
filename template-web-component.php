@@ -119,7 +119,12 @@
                     <?php while (have_rows('component_markup')) : the_row(); ?>               
                       <div class="<?php echo $interactive_example_grid; ?>">
                         <?php if ($interactive_example_count > 1) { ?>
-                          <div class="doc_key"><?php echo $component_sample_counter; ?></div>
+                          <div class="doc_key_container">
+                            <div class="doc_key"><?php echo $component_sample_counter; ?></div>
+                            <div class="doc_key code_key">
+                              <a href="#" data-toggle="modal" data-target="#component_markup" data-alt="<?php the_field('component_variation_name'); ?>" data-component="<?php echo get_the_ID(); ?>">&lt; /&gt;</a>
+                            </div>
+                          </div>
                           <div class="clearfix"></div>
                           
                         <?php } ?> 
@@ -351,6 +356,38 @@
   </div><!-- #content -->
 
 </div><!-- #page -->
+
+
+<!-- Code Modal: START -->
+<div class="modal fade" id="component_markup" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal_title"></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+
+      </div>
+    </div>
+  </div>
+</div>                    
+<!-- Code Modal: END -->
+
+<script>  
+(function($) {
+
+$('#collection_zoom').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient_alt = button.data('alt') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal_title').text(recipient_alt)
+})                
+  
+})(jQuery); 
+</script>     
 
 </body>
 </html>

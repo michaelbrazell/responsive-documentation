@@ -111,6 +111,10 @@ h5.wp_responsive_doc,
 
 .doc_key { width: 25px; height: 25px; padding: 6px 7px 7px 7px; margin: 0 20px 15px 0; border-radius: 50%; background-color: #0072bc; color: #fff; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; float: left; text-align: center; }
 
+.doc_key_container { margin:0 0 15px; display: table; }
+.doc_key_container .doc_key { padding:0; display:table-cell; float:none; vertical-align:middle; }
+
+
 .wp_responsive_doc .panel { margin-bottom:0; border-color:#187dbb; border-width:3px; border-radius:0 10px 10px 10px; }
 .wp_responsive_doc .panel-body { font-size:15px; }
 .wp_responsive_doc .panel-body h3 { margin-bottom:15px; /*color:#b7b7b7;*/ font-weight:500; }
