@@ -213,11 +213,7 @@ h5.wp_responsive_doc,
 
     /* Mobile (xs) */
     @media (max-width:767px) {
-
-      .navbar { padding-top:8px; }
-      .nav_control { margin-top:-8px; }
       .collapse.navbar-collapse { display:block; }
-
     }
 
 
