@@ -58,7 +58,7 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
               </button>
             </div>
             <div class="navbar-header">
-              <a class="navbar-brand" href="<?php echo site_url(); ?>">MathWorks Web Standards Documentation</a>
+              <a class="navbar-brand" href="<?php echo site_url(); ?>">MathWorks Website Standards</a>
               <span class="includes_contract_track">inclues_content track: <?php echo $ic_track_mini; ?></span>
             </div>
           </div>
