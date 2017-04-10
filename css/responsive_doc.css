@@ -186,6 +186,11 @@ h5.wp_responsive_doc,
   .navbar-header a.navbar-brand:visited { color:#fff; }
   .navbar-header a.navbar-brand:hover { color:#fff; opacity:0.5; text-decoration:none; }
 
+    /* Mobile (xs) */
+    @media (max-width:767px) {
+      .navbar-brand { font-size:15px; }
+    }  
+
   .navbar-form { margin-top:1px; }
 
   .nav_control { width:70px; height:70px; margin:-17px 0 0 -15px; background:#00a1d9; float:left; }
