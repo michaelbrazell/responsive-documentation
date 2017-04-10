@@ -15,7 +15,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12">
-          <div class="footer">Problems or questions? Contact Ryan Johnson (x7096)</div>
+          <div class="footer">Problems or questions? <br class="visible-xs">Contact Ryan Johnson (x7096)</div>
         </div>
       </div>
     </div>
