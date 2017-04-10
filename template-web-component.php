@@ -80,11 +80,11 @@
               
               
               <!-- WYSIWYG Content: START -->
-              <section class="wp_responsive_doc add_margin_60">
-                <?php if (get_field('wysiwyg_content')) { ?>
+              <?php if (get_field('wysiwyg_content')) { ?>
+                <section class="wp_responsive_doc add_margin_60">
                   <?php the_field('wysiwyg_content'); ?>
-                <?php } ?>              
-              </section>
+                </section>
+              <?php } ?> 
               <!-- WYSIWYG Content: START -->
 
 
