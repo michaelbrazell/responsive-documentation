@@ -360,9 +360,9 @@
 
 <!-- Code Modal: START -->
 <div class="modal fade" id="component_markup_modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-lg wp_responsive_doc">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header wp_responsive_doc">
         <h3 class="modal_title"></h3>
         <h4 class="modal_subtitle"></h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
