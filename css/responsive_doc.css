@@ -117,6 +117,7 @@ h5.wp_responsive_doc,
 .doc_key_container .reference_key a { color:#e1e1e1; display: table-cell; vertical-align: middle; text-decoration:none; }
 .doc_key_container .reference_key:hover { border-color:#666; background: #666; }
 .doc_key_container .reference_key:hover a { color:#fff; }
+.doc_key_container .icon-mobile { margin: -2px -3px 0 0; }
 
 
 .wp_responsive_doc .panel { margin-bottom:0; border-color:#187dbb; border-width:3px; border-radius:0 10px 10px 10px; }
