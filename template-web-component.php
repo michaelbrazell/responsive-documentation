@@ -124,7 +124,7 @@
                             <div class="doc_key reference_key">
                               <a href="#" data-toggle="modal" data-target="#component_markup_modal" data-title="<?php the_field('component_variation_name'); ?>" data-subtitle="<?php the_sub_field('component_interactive_markup_title'); ?>" data-component="<?php echo get_the_ID(); ?>" data-subcomponent="<?php echo $component_sample_counter; ?>" data-markup="<?php echo urlencode(get_sub_field('component_sample_markup')); ?>">&lt;/&gt;</a>
                             </div>
-                            <div class="doc_key reference_key"><a href="<?php the_permalink(); ?>?subcomponent=<?php echo $interactive_example_count; ?>" target="_blank"><span class="icon-mobile icon_16"></span></a></div>
+                            <div class="doc_key reference_key"><a href="<?php the_permalink(); ?>?subcomponent=<?php echo $component_sample_counter; ?>" target="_blank"><span class="icon-mobile icon_16"></span></a></div>
                           </div>
                           <div class="clearfix"></div>
                         <?php } elseif ($interactive_example_count >= 1) { ?>
@@ -132,7 +132,7 @@
                             <div class="doc_key reference_key">
                               <a href="#" data-toggle="modal" data-target="#component_markup_modal" data-title="<?php the_field('component_variation_name'); ?>" data-subtitle="<?php the_sub_field('component_interactive_markup_title'); ?>" data-component="<?php echo get_the_ID(); ?>" data-subcomponent="<?php echo $component_sample_counter; ?>" data-markup="<?php echo urlencode(get_sub_field('component_sample_markup')); ?>">&lt;/&gt;</a>
                             </div>
-                            <div class="doc_key reference_key"><a href="<?php the_permalink(); ?>?subcomponent=<?php echo $interactive_example_count; ?>" target="_blank"><span class="icon-mobile icon_16"></span></a></div>
+                            <div class="doc_key reference_key"><a href="<?php the_permalink(); ?>?subcomponent=<?php echo $component_sample_counter; ?>" target="_blank"><span class="icon-mobile icon_16"></span></a></div>
                           </div>
                           <div class="clearfix"></div>
                         <?php } ?> 
@@ -251,7 +251,7 @@
                             <div class="doc_key reference_key">
                               <a href="#" data-toggle="modal" data-target="#component_markup_modal" data-title="<?php the_field('component_variation_name'); ?>" data-subtitle="<?php the_sub_field('component_interactive_markup_title'); ?>" data-component="<?php echo get_the_ID(); ?>" data-subcomponent="<?php echo $component_sample_counter; ?>" data-markup="<?php echo urlencode(get_sub_field('component_sample_markup')); ?>">&lt;/&gt;</a>
                             </div>
-                            <div class="doc_key reference_key"><a href="<?php the_permalink(); ?>?subcomponent=<?php echo $interactive_example_count; ?>" target="_blank"><span class="icon-mobile icon_16"></span></a></div>
+                            <div class="doc_key reference_key"><a href="<?php the_permalink(); ?>?subcomponent=<?php echo $component_sample_counter; ?>" target="_blank"><span class="icon-mobile icon_16"></span></a></div>
                           </div>
                           <div class="clearfix"></div>
                         <?php } elseif ($interactive_example_count >= 1) { ?>
@@ -259,7 +259,7 @@
                             <div class="doc_key reference_key">
                               <a href="#" data-toggle="modal" data-target="#component_markup_modal" data-title="<?php the_field('component_variation_name'); ?>" data-subtitle="<?php the_sub_field('component_interactive_markup_title'); ?>" data-component="<?php echo get_the_ID(); ?>" data-subcomponent="<?php echo $component_sample_counter; ?>" data-markup="<?php echo urlencode(get_sub_field('component_sample_markup')); ?>">&lt;/&gt;</a>
                             </div>
-                            <div class="doc_key reference_key"><a href="<?php the_permalink(); ?>?subcomponent=<?php echo $interactive_example_count; ?>" target="_blank"><span class="icon-mobile icon_16"></span></a></div>
+                            <div class="doc_key reference_key"><a href="<?php the_permalink(); ?>?subcomponent=<?php echo $component_sample_counter; ?>" target="_blank"><span class="icon-mobile icon_16"></span></a></div>
                           </div>
                           <div class="clearfix"></div>
                         <?php } ?> 
