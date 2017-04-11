@@ -20,86 +20,87 @@
                 <section class="small">
                   <p>The content is presented in a Bootstrap 12-column grid, but you can change the grid using the dropdowns below. The mobile view is always presented full-width. The query paramters are added to the URL so you can link to this page using a pre-set conlumn configuration.</p>
                   <form action="" method="get">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <div class="form-group">
-                        <label for="breakpoint_lg">Desktop Large</label>
-                      </div>                    
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label for="breakpoint_lg">Desktop Large</label>
+                        </div>                    
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label for="breakpoint_md">Desktop Small</label>
+                        </div>                       
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <label for="breakpoint_sm">Tablet</label>
+                        </div>                     
+                      </div>
+                      <div class="col-sm-3"></div>
                     </div>
-                    <div class="col-sm-3">
-                      <div class="form-group">
-                        <label for="breakpoint_md">Desktop Small</label>
-                      </div>                       
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <select name="breakpoint_lg" class="form-control" id="breakpoint_lg">
+                            <option value="">-- select one --</option>
+                            <option value="col-lg-12" <?php if ($_GET['breakpoint_lg'] == "col-lg-12") { echo "selected=\"selected\""; } ?>>col-lg-12</option>
+                            <option value="col-lg-11" <?php if ($_GET['breakpoint_lg'] == "col-lg-11") { echo "selected=\"selected\""; } ?>>col-lg-11</option>
+                            <option value="col-lg-10" <?php if ($_GET['breakpoint_lg'] == "col-lg-10") { echo "selected=\"selected\""; } ?>>col-lg-10</option>
+                            <option value="col-lg-9" <?php if ($_GET['breakpoint_lg'] == "col-lg-9") { echo "selected=\"selected\""; } ?>>col-lg-9</option>
+                            <option value="col-lg-8" <?php if ($_GET['breakpoint_lg'] == "col-lg-8") { echo "selected=\"selected\""; } ?>>col-lg-8</option>
+                            <option value="col-lg-7" <?php if ($_GET['breakpoint_lg'] == "col-lg-7") { echo "selected=\"selected\""; } ?>>col-lg-7</option>
+                            <option value="col-lg-6" <?php if ($_GET['breakpoint_lg'] == "col-lg-6") { echo "selected=\"selected\""; } ?>>col-lg-6</option>
+                            <option value="col-lg-5" <?php if ($_GET['breakpoint_lg'] == "col-lg-5") { echo "selected=\"selected\""; } ?>>col-lg-5</option>
+                            <option value="col-lg-4" <?php if ($_GET['breakpoint_lg'] == "col-lg-4") { echo "selected=\"selected\""; } ?>>col-lg-4</option>
+                            <option value="col-lg-3" <?php if ($_GET['breakpoint_lg'] == "col-lg-3") { echo "selected=\"selected\""; } ?>>col-lg-3</option>
+                            <option value="col-lg-2" <?php if ($_GET['breakpoint_lg'] == "col-lg-2") { echo "selected=\"selected\""; } ?>>col-lg-2</option>
+                            <option value="col-lg-1" <?php if ($_GET['breakpoint_lg'] == "col-lg-1") { echo "selected=\"selected\""; } ?>>col-lg-1</option>
+                          </select>
+                        </div>                    
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <select name="breakpoint_md" class="form-control" id="breakpoint_md">
+                            <option value="">-- select one --</option>
+                            <option value="col-md-12" <?php if ($_GET['breakpoint_md'] == "col-md-12") { echo "selected=\"selected\""; } ?>>col-md-12</option>
+                            <option value="col-md-11" <?php if ($_GET['breakpoint_md'] == "col-md-11") { echo "selected=\"selected\""; } ?>>col-md-11</option>
+                            <option value="col-md-10" <?php if ($_GET['breakpoint_md'] == "col-md-10") { echo "selected=\"selected\""; } ?>>col-md-10</option>
+                            <option value="col-md-9" <?php if ($_GET['breakpoint_md'] == "col-md-9") { echo "selected=\"selected\""; } ?>>col-md-9</option>
+                            <option value="col-md-8" <?php if ($_GET['breakpoint_md'] == "col-md-8") { echo "selected=\"selected\""; } ?>>col-md-8</option>
+                            <option value="col-md-7" <?php if ($_GET['breakpoint_md'] == "col-md-7") { echo "selected=\"selected\""; } ?>>col-md-7</option>
+                            <option value="col-md-6" <?php if ($_GET['breakpoint_md'] == "col-md-6") { echo "selected=\"selected\""; } ?>>col-md-6</option>
+                            <option value="col-md-5" <?php if ($_GET['breakpoint_md'] == "col-md-5") { echo "selected=\"selected\""; } ?>>col-md-5</option>
+                            <option value="col-md-4" <?php if ($_GET['breakpoint_md'] == "col-md-4") { echo "selected=\"selected\""; } ?>>col-md-4</option>
+                            <option value="col-md-3" <?php if ($_GET['breakpoint_md'] == "col-md-3") { echo "selected=\"selected\""; } ?>>col-md-3</option>
+                            <option value="col-md-2" <?php if ($_GET['breakpoint_md'] == "col-md-2") { echo "selected=\"selected\""; } ?>>col-md-2</option>
+                            <option value="col-md-1" <?php if ($_GET['breakpoint_md'] == "col-md-1") { echo "selected=\"selected\""; } ?>>col-md-1</option>
+                          </select>
+                        </div>                       
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="form-group">
+                          <select name="breakpoint_sm" class="form-control" id="breakpoint_sm">
+                            <option value="">-- select one --</option>
+                            <option value="col-sm-12" <?php if ($_GET['breakpoint_sm'] == "col-sm-12") { echo "selected=\"selected\""; } ?>>col-sm-12</option>
+                            <option value="col-sm-11" <?php if ($_GET['breakpoint_sm'] == "col-sm-11") { echo "selected=\"selected\""; } ?>>col-sm-11</option>
+                            <option value="col-sm-10" <?php if ($_GET['breakpoint_sm'] == "col-sm-10") { echo "selected=\"selected\""; } ?>>col-sm-10</option>
+                            <option value="col-sm-9" <?php if ($_GET['breakpoint_sm'] == "col-sm-9") { echo "selected=\"selected\""; } ?>>col-sm-9</option>
+                            <option value="col-sm-8" <?php if ($_GET['breakpoint_sm'] == "col-sm-8") { echo "selected=\"selected\""; } ?>>col-sm-8</option>
+                            <option value="col-sm-7" <?php if ($_GET['breakpoint_sm'] == "col-sm-7") { echo "selected=\"selected\""; } ?>>col-sm-7</option>
+                            <option value="col-sm-6" <?php if ($_GET['breakpoint_sm'] == "col-sm-6") { echo "selected=\"selected\""; } ?>>col-sm-6</option>
+                            <option value="col-sm-5" <?php if ($_GET['breakpoint_sm'] == "col-sm-5") { echo "selected=\"selected\""; } ?>>col-sm-5</option>
+                            <option value="col-sm-4" <?php if ($_GET['breakpoint_sm'] == "col-sm-4") { echo "selected=\"selected\""; } ?>>col-sm-4</option>
+                            <option value="col-sm-3" <?php if ($_GET['breakpoint_sm'] == "col-sm-3") { echo "selected=\"selected\""; } ?>>col-sm-3</option>
+                            <option value="col-sm-2" <?php if ($_GET['breakpoint_sm'] == "col-sm-2") { echo "selected=\"selected\""; } ?>>col-sm-2</option>
+                            <option value="col-sm-1" <?php if ($_GET['breakpoint_sm'] == "col-sm-1") { echo "selected=\"selected\""; } ?>>col-sm-1</option>
+                          </select>
+                        </div>                     
+                      </div>
+                      <div class="col-sm-3">
+                        <input type="hidden" name="subcomponent" value="<?php echo $_GET['subcomponent']; ?>">
+                        <button type="submit" id="submit" class="btn btn_color_blue">Go!</button>
+                      </div>
                     </div>
-                    <div class="col-sm-3">
-                      <div class="form-group">
-                        <label for="breakpoint_sm">Tablet</label>
-                      </div>                     
-                    </div>
-                    <div class="col-sm-3"></div>
-                  </div>
-                    <div class="col-sm-3">
-                      <div class="form-group">
-                        <select name="breakpoint_lg" class="form-control" id="breakpoint_lg">
-                          <option value="">-- select one --</option>
-                          <option value="col-lg-12" <?php if ($_GET['breakpoint_lg'] == "col-lg-12") { echo "selected=\"selected\""; } ?>>col-lg-12</option>
-                          <option value="col-lg-11" <?php if ($_GET['breakpoint_lg'] == "col-lg-11") { echo "selected=\"selected\""; } ?>>col-lg-11</option>
-                          <option value="col-lg-10" <?php if ($_GET['breakpoint_lg'] == "col-lg-10") { echo "selected=\"selected\""; } ?>>col-lg-10</option>
-                          <option value="col-lg-9" <?php if ($_GET['breakpoint_lg'] == "col-lg-9") { echo "selected=\"selected\""; } ?>>col-lg-9</option>
-                          <option value="col-lg-8" <?php if ($_GET['breakpoint_lg'] == "col-lg-8") { echo "selected=\"selected\""; } ?>>col-lg-8</option>
-                          <option value="col-lg-7" <?php if ($_GET['breakpoint_lg'] == "col-lg-7") { echo "selected=\"selected\""; } ?>>col-lg-7</option>
-                          <option value="col-lg-6" <?php if ($_GET['breakpoint_lg'] == "col-lg-6") { echo "selected=\"selected\""; } ?>>col-lg-6</option>
-                          <option value="col-lg-5" <?php if ($_GET['breakpoint_lg'] == "col-lg-5") { echo "selected=\"selected\""; } ?>>col-lg-5</option>
-                          <option value="col-lg-4" <?php if ($_GET['breakpoint_lg'] == "col-lg-4") { echo "selected=\"selected\""; } ?>>col-lg-4</option>
-                          <option value="col-lg-3" <?php if ($_GET['breakpoint_lg'] == "col-lg-3") { echo "selected=\"selected\""; } ?>>col-lg-3</option>
-                          <option value="col-lg-2" <?php if ($_GET['breakpoint_lg'] == "col-lg-2") { echo "selected=\"selected\""; } ?>>col-lg-2</option>
-                          <option value="col-lg-1" <?php if ($_GET['breakpoint_lg'] == "col-lg-1") { echo "selected=\"selected\""; } ?>>col-lg-1</option>
-                        </select>
-                      </div>                    
-                    </div>
-                    <div class="col-sm-3">
-                      <div class="form-group">
-                        <select name="breakpoint_md" class="form-control" id="breakpoint_md">
-                          <option value="">-- select one --</option>
-                          <option value="col-md-12" <?php if ($_GET['breakpoint_md'] == "col-md-12") { echo "selected=\"selected\""; } ?>>col-md-12</option>
-                          <option value="col-md-11" <?php if ($_GET['breakpoint_md'] == "col-md-11") { echo "selected=\"selected\""; } ?>>col-md-11</option>
-                          <option value="col-md-10" <?php if ($_GET['breakpoint_md'] == "col-md-10") { echo "selected=\"selected\""; } ?>>col-md-10</option>
-                          <option value="col-md-9" <?php if ($_GET['breakpoint_md'] == "col-md-9") { echo "selected=\"selected\""; } ?>>col-md-9</option>
-                          <option value="col-md-8" <?php if ($_GET['breakpoint_md'] == "col-md-8") { echo "selected=\"selected\""; } ?>>col-md-8</option>
-                          <option value="col-md-7" <?php if ($_GET['breakpoint_md'] == "col-md-7") { echo "selected=\"selected\""; } ?>>col-md-7</option>
-                          <option value="col-md-6" <?php if ($_GET['breakpoint_md'] == "col-md-6") { echo "selected=\"selected\""; } ?>>col-md-6</option>
-                          <option value="col-md-5" <?php if ($_GET['breakpoint_md'] == "col-md-5") { echo "selected=\"selected\""; } ?>>col-md-5</option>
-                          <option value="col-md-4" <?php if ($_GET['breakpoint_md'] == "col-md-4") { echo "selected=\"selected\""; } ?>>col-md-4</option>
-                          <option value="col-md-3" <?php if ($_GET['breakpoint_md'] == "col-md-3") { echo "selected=\"selected\""; } ?>>col-md-3</option>
-                          <option value="col-md-2" <?php if ($_GET['breakpoint_md'] == "col-md-2") { echo "selected=\"selected\""; } ?>>col-md-2</option>
-                          <option value="col-md-1" <?php if ($_GET['breakpoint_md'] == "col-md-1") { echo "selected=\"selected\""; } ?>>col-md-1</option>
-                        </select>
-                      </div>                       
-                    </div>
-                    <div class="col-sm-3">
-                      <div class="form-group">
-                        <select name="breakpoint_sm" class="form-control" id="breakpoint_sm">
-                          <option value="">-- select one --</option>
-                          <option value="col-sm-12" <?php if ($_GET['breakpoint_sm'] == "col-sm-12") { echo "selected=\"selected\""; } ?>>col-sm-12</option>
-                          <option value="col-sm-11" <?php if ($_GET['breakpoint_sm'] == "col-sm-11") { echo "selected=\"selected\""; } ?>>col-sm-11</option>
-                          <option value="col-sm-10" <?php if ($_GET['breakpoint_sm'] == "col-sm-10") { echo "selected=\"selected\""; } ?>>col-sm-10</option>
-                          <option value="col-sm-9" <?php if ($_GET['breakpoint_sm'] == "col-sm-9") { echo "selected=\"selected\""; } ?>>col-sm-9</option>
-                          <option value="col-sm-8" <?php if ($_GET['breakpoint_sm'] == "col-sm-8") { echo "selected=\"selected\""; } ?>>col-sm-8</option>
-                          <option value="col-sm-7" <?php if ($_GET['breakpoint_sm'] == "col-sm-7") { echo "selected=\"selected\""; } ?>>col-sm-7</option>
-                          <option value="col-sm-6" <?php if ($_GET['breakpoint_sm'] == "col-sm-6") { echo "selected=\"selected\""; } ?>>col-sm-6</option>
-                          <option value="col-sm-5" <?php if ($_GET['breakpoint_sm'] == "col-sm-5") { echo "selected=\"selected\""; } ?>>col-sm-5</option>
-                          <option value="col-sm-4" <?php if ($_GET['breakpoint_sm'] == "col-sm-4") { echo "selected=\"selected\""; } ?>>col-sm-4</option>
-                          <option value="col-sm-3" <?php if ($_GET['breakpoint_sm'] == "col-sm-3") { echo "selected=\"selected\""; } ?>>col-sm-3</option>
-                          <option value="col-sm-2" <?php if ($_GET['breakpoint_sm'] == "col-sm-2") { echo "selected=\"selected\""; } ?>>col-sm-2</option>
-                          <option value="col-sm-1" <?php if ($_GET['breakpoint_sm'] == "col-sm-1") { echo "selected=\"selected\""; } ?>>col-sm-1</option>
-                        </select>
-                      </div>                     
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="hidden" name="subcomponent" value="<?php echo $_GET['subcomponent']; ?>">
-                      <button type="submit" id="submit" class="btn btn_color_blue">Go!</button>
-                    </div>
-                  </div>
                   </form>
                 </section>
                 <div class="breakpoint_indicator visible-lg">Desktop Large Breakpoint <span class="breakpoint_code">lg</span></div>
