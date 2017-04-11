@@ -334,6 +334,7 @@ h5.wp_responsive_doc,
   .breakpoint_indicator.visible-md { background:#022F40; }
   .breakpoint_indicator.visible-sm { background:#247BA0; }
   .breakpoint_indicator.visible-xs { background:#38AECC; }
+  .breakpoint_indicator .breakpoint_code { color:rgba(255,255,255,0.5); float:right; }
 
 
   /* ---- Comments ---- */

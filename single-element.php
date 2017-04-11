@@ -17,10 +17,10 @@
               <div class="wp_responsive_doc">
                 <h1>Responsive Component Tester</h1>
                 <p>The selected component will be presented in a variety of scenarios, adjust the width of your browser to view the inherent responsive behavior and interaction.</p>
-                <div class="breakpoint_indicator visible-lg">Desktop Large Breakpoint<br><small>(lg)</small></div>
-                <div class="breakpoint_indicator visible-md">Desktop Small Breakpoint<br><small>(md)</small></div>
-                <div class="breakpoint_indicator visible-sm">Tablet Breakpoint<br><small>(md)</small></div>
-                <div class="breakpoint_indicator visible-xs">Mobile Breakpoint<br><small>(xs)</small></div>
+                <div class="breakpoint_indicator visible-lg">Desktop Large Breakpoint <span class="breakpoint_code">lg</span></div>
+                <div class="breakpoint_indicator visible-md">Desktop Small Breakpoint <span class="breakpoint_code">md</span></div>
+                <div class="breakpoint_indicator visible-sm">Tablet Breakpoint <span class="breakpoint_code">sm</span></div>
+                <div class="breakpoint_indicator visible-xs">Mobile Breakpoint <span class="breakpoint_code">xs</span></div>
               </div>
 
               <!-- Component: Associated Elements: START -->
