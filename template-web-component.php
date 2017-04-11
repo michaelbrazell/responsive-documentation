@@ -122,7 +122,7 @@
                           <div class="doc_key_container">
                             <div class="doc_key"><?php echo $component_sample_counter; ?></div>
                             <div class="doc_key code_key">
-                              <a href="#" data-toggle="modal" data-target="#component_markup_modal" data-title="<?php the_field('component_variation_name'); ?><?php if (get_sub_field('component_interactive_markup_title')) { ?>: <?php the_sub_field('component_interactive_markup_title'); ?><?php } ?>" data-component="<?php echo get_the_ID(); ?>" data-subcomponent="<?php echo $component_sample_counter; ?>">&lt;/&gt;</a>
+                              <a href="#" data-toggle="modal" data-target="#component_markup_modal" data-title="<?php the_field('component_variation_name'); ?>" data-subtitle="<?php the_sub_field('component_interactive_markup_title'); ?>" data-component="<?php echo get_the_ID(); ?>" data-subcomponent="<?php echo $component_sample_counter; ?>">&lt;/&gt;</a>
                             </div>
                           </div>
                           <div class="clearfix"></div>
@@ -364,6 +364,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h3 class="modal_title"></h3>
+        <h4 class="modal_subtitle"></h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
@@ -380,10 +381,12 @@
 $('#component_markup_modal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient_title = button.data('title') // Extract info from data-* attributes
+  var recipient_subtitle = button.data('subtitle') // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this)
   modal.find('.modal_title').text(recipient_title)
+  modal.find('.modal_subtitle').text(recipient_subtitle)
 })                
   
 })(jQuery); 

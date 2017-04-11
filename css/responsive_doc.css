@@ -320,7 +320,8 @@ h5.wp_responsive_doc,
   /* ---- Markup Modal ---- */
   #component_markup_modal .modal-header { overflow:hidden; position:relative; }
   #component_markup_modal .modal-header .close { font-size:34px; line-height:.55; outline:none; position:absolute; top:21px; right:15px; transition:all .3s ease; }
-  #component_markup_modal .modal_title { max-width:calc(100% - 50px); margin:3px 0 0; float:left; }
+  #component_markup_modal .modal_title { max-width:calc(100% - 50px); margin:3px 0 0; float:left; font-weight:400; }
+  #component_markup_modal .modal_subtitle:empty { display: none; }
 
 
   /* ---- Comments ---- */
