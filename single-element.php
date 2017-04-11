@@ -18,7 +18,7 @@
                 <h1>Responsive Component Tester</h1>
                 <p>The selected component will be presented in a variety of scenarios, adjust the width of your browser to view the inherent responsive behavior and interaction.</p>
                 <p><small>The content is presented in a Bootstrap 12-column grid, but you can change the grid using the dropdowns below. The mobile view is always presented full-width. The query paramters are added to the URL so you can link to this page using a pre-set conlumn configuration.</small></p>
-                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
+                <form action="<?php get_permalink(); ?>?subcomponent=<?php echo $_GET['subcomponent']; ?>" method="get">
                 <div class="row">
                   <div class="col-sm-3">
                     <div class="form-group">
