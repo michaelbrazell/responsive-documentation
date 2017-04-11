@@ -113,10 +113,10 @@ h5.wp_responsive_doc,
 
 .doc_key_container { margin:0 0 15px; overflow: hidden; }
 .doc_key_container .doc_key { width:30px; height:30px; padding: 8px 9px 9px 9px; margin:0 10px 0 0; font-size:16px; line-height:90%; }
-.doc_key_container .code_key { padding: 0; border:2px solid #e1e1e1; background: #fff; display:table; font-size:12px; transition:all ease-in-out .3s; }
-.doc_key_container .code_key a { color:#e1e1e1; display: table-cell; vertical-align: middle; text-decoration:none; }
-.doc_key_container .code_key:hover { border-color:#666; background: #666; }
-.doc_key_container .code_key:hover a { color:#fff; }
+.doc_key_container .reference_key { padding: 0; border:2px solid #e1e1e1; background: #fff; display:table; font-size:12px; transition:all ease-in-out .3s; }
+.doc_key_container .reference_key a { color:#e1e1e1; display: table-cell; vertical-align: middle; text-decoration:none; }
+.doc_key_container .reference_key:hover { border-color:#666; background: #666; }
+.doc_key_container .reference_key:hover a { color:#fff; }
 
 
 .wp_responsive_doc .panel { margin-bottom:0; border-color:#187dbb; border-width:3px; border-radius:0 10px 10px 10px; }
