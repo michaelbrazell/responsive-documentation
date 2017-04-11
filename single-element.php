@@ -19,22 +19,16 @@
                 <p>The selected component will be presented in a variety of scenarios, adjust the width of your browser to view the inherent responsive behavior and interaction.</p>
                 <section class="small">
                   <p>The content is presented in a Bootstrap 12-column grid, but you can change the grid using the dropdowns below. The mobile view is always presented full-width. The query paramters are added to the URL so you can link to this page using a pre-set conlumn configuration.</p>
-                  <form action="" method="get">
+                  <form action="" method="get" class="add_margin_20">
                     <div class="row">
                       <div class="col-sm-3">
-                        <div class="form-group">
-                          <label for="breakpoint_lg">Desktop Large</label>
-                        </div>                    
+                        <label for="breakpoint_lg">Desktop Large</label>               
                       </div>
                       <div class="col-sm-3">
-                        <div class="form-group">
-                          <label for="breakpoint_md">Desktop Small</label>
-                        </div>                       
+                        <label for="breakpoint_md">Desktop Small</label>                      
                       </div>
                       <div class="col-sm-3">
-                        <div class="form-group">
-                          <label for="breakpoint_sm">Tablet</label>
-                        </div>                     
+                        <label for="breakpoint_sm">Tablet</label>                   
                       </div>
                       <div class="col-sm-3"></div>
                     </div>
