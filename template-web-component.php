@@ -387,7 +387,7 @@ $('#component_markup_modal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var recipient_title = button.data('title') // Extract info from data-* attributes
   var recipient_subtitle = button.data('subtitle') // Extract info from data-* attributes
-  var recipient_markup = button.data('markup') // Extract info from data-* attributes
+  var recipient_markup = decodeURIComponent(button.data('markup')) // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this)
