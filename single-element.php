@@ -120,7 +120,24 @@
                   <?php endwhile; ?>
                 </div>
               </div>
-              <!-- Component: Associated Elements: END -->              
+              <!-- Component: Associated Elements: END -->
+
+              <hr>
+
+              <h2 class="wp_responsive_doc" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?></span></h2>
+              <div class="row">
+                <div class="col-xs-12<?php if ($_GET['breakpoint_lg']) { echo " " . $_GET['breakpoint_lg']; } if ($_GET['breakpoint_md']) { echo " " . $_GET['breakpoint_md']; } if ($_GET['breakpoint_sm']) { echo " " . $_GET['breakpoint_sm']; } ?>">
+                  <?php $component_sample_counter = 1; ?>
+                  <?php while (have_rows('component_markup')) : the_row(); ?>               
+                    <?php if (get_sub_field('component_interactive_markup_title')) { ?>
+                      <h4 class="wp_responsive_doc"><?php the_sub_field('component_interactive_markup_title'); ?></h4>
+                    <?php } ?>                                                
+                    <?php the_sub_field('component_interactive_markup'); ?>
+                    <?php $component_sample_counter++; ?>
+                    <div class="clearfix add_margin_30"></div>
+                  <?php endwhile; ?>
+                </div>
+              </div>              
               
             </div>
           </div>
