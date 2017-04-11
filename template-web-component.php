@@ -390,7 +390,7 @@ $('#component_markup_modal').on('show.bs.modal', function (event) {
   var modal = $(this)
   modal.find('.modal_title').text(recipient_title)
   modal.find('.modal_subtitle').text(recipient_subtitle)
-  modal.find('.modal_markup').html(recipient_markup)
+  modal.find('.modal_markup').text(recipient_markup)
 })                
   
 })(jQuery); 
