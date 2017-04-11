@@ -109,12 +109,14 @@
                 <div class="col-xs-12<?php if ($_GET['breakpoint_lg']) { echo " " . $_GET['breakpoint_lg']; } if ($_GET['breakpoint_md']) { echo " " . $_GET['breakpoint_md']; } if ($_GET['breakpoint_sm']) { echo " " . $_GET['breakpoint_sm']; } ?>">
                   <?php $component_sample_counter = 1; ?>
                   <?php while (have_rows('component_markup')) : the_row(); ?>               
-                    <?php if (get_sub_field('component_interactive_markup_title')) { ?>
-                      <h4 class="wp_responsive_doc"><?php the_sub_field('component_interactive_markup_title'); ?></h4>
-                    <?php } ?>                                                
-                    <?php the_sub_field('component_interactive_markup'); ?>
-                    <?php $component_sample_counter++; ?>
-                    <div class="clearfix add_margin_30"></div>
+                    <?php if ($component_sample_counter == $_GET['subcomponent']) { ?>
+                      <?php if (get_sub_field('component_interactive_markup_title')) { ?>
+                        <h4 class="wp_responsive_doc"><?php the_sub_field('component_interactive_markup_title'); ?></h4>
+                      <?php } ?>                                                
+                      <?php the_sub_field('component_interactive_markup'); ?>
+                      <?php $component_sample_counter++; ?>
+                      <div class="clearfix add_margin_30"></div>
+                    <?php } ?>
                   <?php endwhile; ?>
                 </div>
               </div>
