@@ -328,6 +328,14 @@ h5.wp_responsive_doc,
   #component_markup_modal .modal_subtitle:empty { display: none; }
 
 
+  /* ---- Responsive Tester ---- */
+  .breakpoint_indicator { padding:10px; text-align:center; }
+  .breakpoint_indicator.visible-lg { background:#4AB0A0; }
+  .breakpoint_indicator.visible-md { background:#022F40; }
+  .breakpoint_indicator.visible-sm { background:#247BA0; }
+  .breakpoint_indicator.visible-xs { background:#38AECC; }
+
+
   /* ---- Comments ---- */
   .comments_container { padding:0 0 30px; border-top: 7px solid #e1e1e1; background:#f5f5f5; font-family:'Roboto', sans-serif; }
   .comments_container * { font-family:'Roboto', sans-serif !important; }
