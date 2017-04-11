@@ -329,7 +329,7 @@ h5.wp_responsive_doc,
 
 
   /* ---- Responsive Tester ---- */
-  .breakpoint_indicator { padding:10px; text-align:center; }
+  .breakpoint_indicator { padding:10px; margin-bottom:20px; color:#fff; text-align:center; }
   .breakpoint_indicator.visible-lg { background:#4AB0A0; }
   .breakpoint_indicator.visible-md { background:#022F40; }
   .breakpoint_indicator.visible-sm { background:#247BA0; }
