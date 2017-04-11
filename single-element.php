@@ -116,8 +116,8 @@
                       <?php the_sub_field('component_interactive_markup'); ?>
                       <?php $component_sample_counter++; ?>
                       <div class="clearfix add_margin_30"></div>
-                      <?php $component_sample_counter++; ?>
                     <?php } ?>
+                    <?php $component_sample_counter++; ?>
                   <?php endwhile; ?>
                 </div>
               </div>
