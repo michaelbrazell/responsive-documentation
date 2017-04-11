@@ -14,8 +14,36 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
+              <div class="wp_responsive_doc">
+                <h1>Responsive Component Tester</h1>
+                <p>The selected component will be presented in a variety of scenarios, adjust the width of your browser to view the inherent responsive behavior and interaction.</p>
+              </div>
 
-asdf
+
+              <!-- Component: Associated Elements: START -->
+              <?php $associated_elements = get_field('associated_elements'); ?>
+              <?php if ($associated_elements) { ?>
+                <?php foreach($associated_elements as $post): ?>
+
+                  <h2 class="wp_responsive_doc" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?></span></h2>
+                  <div class="row">
+                    <?php $component_sample_counter = 1; ?>
+                    <?php while (have_rows('component_markup')) : the_row(); ?>               
+                        <?php if (get_sub_field('component_interactive_markup_title')) { ?>
+                          <h4 class="wp_responsive_doc"><?php the_sub_field('component_interactive_markup_title'); ?></h4>
+                        <?php } ?>                                                
+                        <?php the_sub_field('component_interactive_markup'); ?>
+                      </div>
+                      <?php $component_sample_counter++; ?>
+                      <div class="clearfix add_margin_30"></div>
+                    <?php endwhile; ?>
+                  </div>
+
+                <?php endforeach; ?>
+              <?php wp_reset_postdata(); ?>
+              <?php } ?>
+              <!-- Component: Associated Elements: END -->              
+
               
             </div>
           </div>
