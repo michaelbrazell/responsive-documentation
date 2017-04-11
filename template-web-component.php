@@ -384,16 +384,17 @@
 (function($) {
 
 $('#component_markup_modal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient_title = button.data('title') // Extract info from data-* attributes
-  var recipient_subtitle = button.data('subtitle') // Extract info from data-* attributes
-  var recipient_markup = decodeURIComponent(button.data('markup')) // Extract info from data-* attributes
+  var button = $(event.relatedTarget); // Button that triggered the modal
+  var recipient_title = button.data('title'); // Extract info from data-* attributes
+  var recipient_subtitle = button.data('subtitle'); // Extract info from data-* attributes
+  var recipient_markup = decodeURIComponent(button.data('markup')); // Extract info from data-* attributes
+  recipient_markup = decodeURIComponent((recipient_markup+'').replace(/\+/g, '%20'));
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal_title').text(recipient_title)
-  modal.find('.modal_subtitle').text(recipient_subtitle)
-  modal.find('.modal_markup').html(recipient_markup)
+  var modal = $(this);
+  modal.find('.modal_title').text(recipient_title);
+  modal.find('.modal_subtitle').text(recipient_subtitle);
+  modal.find('.modal_markup').html(recipient_markup);
 })                
   
 })(jQuery); 
