@@ -122,7 +122,7 @@
                           <div class="doc_key_container">
                             <div class="doc_key"><?php echo $component_sample_counter; ?></div>
                             <div class="doc_key code_key">
-                              <a href="#" data-toggle="modal" data-target="#component_markup_modal" data-title="<?php the_field('component_variation_name'); ?><?php if (get_sub_field('component_interactive_markup_title')) { ?>: <?php the_sub_field('component_interactive_markup_title'); ?><?php } ?>" data-component="<?php echo get_the_ID(); ?>" data-subcomponent="<?php echo $component_sample_counter; ?>">&lt; /&gt;</a>
+                              <a href="#" data-toggle="modal" data-target="#component_markup_modal" data-title="<?php the_field('component_variation_name'); ?><?php if (get_sub_field('component_interactive_markup_title')) { ?>: <?php the_sub_field('component_interactive_markup_title'); ?><?php } ?>" data-component="<?php echo get_the_ID(); ?>" data-subcomponent="<?php echo $component_sample_counter; ?>">&lt;/&gt;</a>
                             </div>
                           </div>
                           <div class="clearfix"></div>
