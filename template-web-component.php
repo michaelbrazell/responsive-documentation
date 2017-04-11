@@ -118,7 +118,7 @@
                     <?php $component_sample_counter = 1; ?>
                     <?php while (have_rows('component_markup')) : the_row(); ?>               
                       <div class="<?php echo $interactive_example_grid; ?>">
-                        <?php if ($interactive_example_count > 1) { ?>
+                        <?php if ($interactive_example_count >= 1) { ?>
                           <div class="doc_key_container">
                             <div class="doc_key"><?php echo $component_sample_counter; ?></div>
                             <div class="doc_key code_key">
