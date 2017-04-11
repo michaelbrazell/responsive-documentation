@@ -112,7 +112,11 @@ h5.wp_responsive_doc,
 .doc_key { width: 25px; height: 25px; padding: 6px 7px 7px 7px; margin: 0 20px 15px 0; border-radius: 50%; background-color: #0072bc; color: #fff; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; float: left; text-align: center; }
 
 .doc_key_container { margin:0 0 15px; display: table; }
-.doc_key_container .doc_key { padding:0; display:table-cell; float:none; vertical-align:middle; }
+.doc_key_container .doc_key { padding:0; border-right:15px solid transparent; display:table-cell; float:none; vertical-align:middle; }
+.doc_key_container .code_key { background:#e1e1e1; }
+.doc_key_container .code_key a,
+.doc_key_container .code_key a:visited { color:#333; text-decoration:none; }
+.doc_key_container .code_key a:hover { color:#fff; text-decoration:none; }
 
 
 .wp_responsive_doc .panel { margin-bottom:0; border-color:#187dbb; border-width:3px; border-radius:0 10px 10px 10px; }
@@ -317,7 +321,7 @@ h5.wp_responsive_doc,
 
   /* ---- Markup Modal ---- */
   #component_markup_modal .modal-header { overflow:hidden; position:relative; }
-  #component_markup_modal .modal-header .close { font-size:34px; line-height:.55; outline:none; position:absolute; top:23px; right:15px; transition:all .3s ease; }
+  #component_markup_modal .modal-header .close { font-size:34px; line-height:.55; outline:none; position:absolute; top:21px; right:15px; transition:all .3s ease; }
   #component_markup_modal .modal_title { max-width:calc(100% - 50px); margin:3px 0 0; float:left; }
 
 
