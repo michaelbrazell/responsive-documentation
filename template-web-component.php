@@ -109,7 +109,7 @@
                       } elseif ($interactive_example_count == 2) {                    
                         $interactive_example_grid = "col-xs-12 col-sm-6";
                       } elseif ($interactive_example_count >= 3) {                      
-                        $interactive_example_grid = "col-xs-12 col-sm-4";
+                        $interactive_example_grid = "col-xs-12 col-sm-6 col-md-4";
                       }
                       
                     }
@@ -237,7 +237,7 @@
                       } elseif ($interactive_example_count == 2) {                    
                         $interactive_example_grid = "col-xs-12 col-sm-6";
                       } elseif ($interactive_example_count >= 3) {                      
-                        $interactive_example_grid = "col-xs-12 col-sm-4";
+                        $interactive_example_grid = "col-xs-12 col-sm-6 col-md-4";
                       }
                       
                     }
