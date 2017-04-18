@@ -100,7 +100,7 @@
                     if (get_field('component_interactive_markup_grid')) {
                     
                       $interactive_example_requested_grid = (get_field('component_interactive_markup_grid'));
-                      
+
                       if ($interactive_example_requested_grid == 12) { 
                         $interactive_example_grid = "col-xs-12";
                       } else { 
@@ -166,7 +166,9 @@
                       <?php } ?>
                       <div class="clearfix add_margin_30 visible-xs"></div>
                       <?php if ($component_sample_counter % 2 == 0) { ?>
-                        <div class="clearfix add_margin_30 visible-sm"></div>
+                        <?php if (!(($interactive_example_requested_grid == 12) || ($interactive_example_requested_grid == 6))) { ?>
+                          <div class="clearfix add_margin_30 visible-sm"></div>
+                        <?php } ?>
                       <?php } ?>
                       <?php $component_sample_counter++; ?>
 
