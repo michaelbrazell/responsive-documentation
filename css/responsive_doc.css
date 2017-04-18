@@ -65,7 +65,7 @@ html body { background:#31373d; overflow-x:hidden; }
 
 .wp_responsive_doc { color:#595959; font:normal 400 18px/1.333 'Roboto', sans-serif; }
 
-.clearfix.add_margin_30.visible-xs + .clearfix.add_margin_30.visible-sm { display: none !important; }
+.clearfix.add_margin_30.hidden-xs + .clearfix.add_margin_30.visible-sm { display: none !important; }
 
 
 /*-----------------------------------
