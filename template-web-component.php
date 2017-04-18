@@ -100,7 +100,12 @@
                     if (get_field('component_interactive_markup_grid')) {
                     
                       $interactive_example_requested_grid = (get_field('component_interactive_markup_grid'));
-                      $interactive_example_grid = "col-xs-12 col-sm-6 col-md-" . $interactive_example_requested_grid . "\"";
+                      
+                      if ($interactive_example_requested_grid == 12) { 
+                        $interactive_example_grid = "col-xs-12";
+                      } else { 
+                        $interactive_example_grid = "col-xs-12 col-sm-6 col-md-" . $interactive_example_requested_grid . "\"";
+                      }
                       
                     } else { 
                     
@@ -232,7 +237,12 @@
                     if (get_field('component_interactive_markup_grid')) {
                     
                       $interactive_example_requested_grid = (get_field('component_interactive_markup_grid'));
-                      $interactive_example_grid = "col-xs-12 col-sm-6 col-md-" . $interactive_example_requested_grid . "\"";
+                      
+                      if ($interactive_example_requested_grid == 12) { 
+                        $interactive_example_grid = "col-xs-12";
+                      } else { 
+                        $interactive_example_grid = "col-xs-12 col-sm-6 col-md-" . $interactive_example_requested_grid . "\"";
+                      }
                       
                     } else { 
                     
