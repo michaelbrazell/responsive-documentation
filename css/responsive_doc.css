@@ -112,7 +112,7 @@ h5.wp_responsive_doc,
 .doc_key { width: 25px; height: 25px; padding: 6px 7px 7px 7px; margin: 0 20px 15px 0; border-radius: 50%; background-color: #0072bc; color: #fff; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; float: left; text-align: center; }
 
 .doc_key_container { margin:0 0 15px; overflow: hidden; }
-.doc_key_container .doc_key { width:26px; height:26px; padding: 8px 0; margin:0 10px 0 0; font-size:16px; line-height:90%; }
+.doc_key_container .doc_key { width:26px; height:26px; padding: 8px 0; margin:0 10px 0 0; font-size:14px; line-height:90%; }
 .doc_key_container .reference_key { padding: 0; border:2px solid #e1e1e1; background: #fff; display:table; font-size:11px; transition:all ease-in-out .3s; }
 .doc_key_container .reference_key a { color:#e1e1e1; display: table-cell; vertical-align: middle; text-decoration:none; }
 .doc_key_container .reference_key:hover { border-color:#666; background: #666; }
