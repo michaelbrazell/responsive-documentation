@@ -145,13 +145,13 @@
                         <?php if ($interactive_example_requested_grid == 12) { ?>
                           <div class="clearfix add_margin_30"></div>
                         <?php } ?>
-                        <?php if (($interactive_example_requested_grid == 6) && ($component_sample_counter % 2 == 0)) { ?>
+                        <?php if ((($interactive_example_requested_grid == 6) && ($component_sample_counter % 2 == 0))  || (($interactive_example_requested_grid == 6) && ($interactive_example_count == $component_sample_counter))) { ?>
                           <div class="clearfix add_margin_30"></div>
                         <?php } ?>
-                        <?php if (($interactive_example_requested_grid == 4) && ($component_sample_counter % 3 == 0)) { ?>
+                        <?php if ((($interactive_example_requested_grid == 4) && ($component_sample_counter % 3 == 0)) || (($interactive_example_requested_grid == 4) && ($interactive_example_count == $component_sample_counter))) { ?>
                           <div class="clearfix add_margin_30"></div>
                         <?php } ?>  
-                        <?php if (($interactive_example_requested_grid == 3) && ($component_sample_counter % 4 == 0)) { ?>
+                        <?php if ((($interactive_example_requested_grid == 3) && ($component_sample_counter % 4 == 0)) || (($interactive_example_requested_grid == 3) && ($interactive_example_count == $component_sample_counter))) { ?>
                           <div class="clearfix add_margin_30"></div>
                         <?php } ?>                       
                       <?php } else { ?>
