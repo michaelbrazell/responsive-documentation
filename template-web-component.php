@@ -390,6 +390,7 @@
       </div>
       <div class="modal-body">
         <pre class="modal_markup"></pre>
+        <p class="add_margin_0">Check the Detailed Configuration Information for this component for more options.</p>
       </div>
     </div>
   </div>
