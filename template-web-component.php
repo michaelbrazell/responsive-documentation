@@ -164,12 +164,12 @@
                           <div class="clearfix add_margin_30 hidden-xs"></div>
                         <?php } ?>                                                  
                       <?php } ?>
-                      <div class="clearfix add_margin_30 visible-xs"></div>
                       <?php if ($component_sample_counter % 2 == 0) { ?>
                         <?php if (!(($interactive_example_requested_grid == 12) || ($interactive_example_requested_grid == 6))) { ?>
                           <div class="clearfix add_margin_30 visible-sm"></div>
                         <?php } ?>
                       <?php } ?>
+                      <div class="clearfix add_margin_30 visible-xs"></div>
                       <?php $component_sample_counter++; ?>
 
                     <?php endwhile; ?>
@@ -303,12 +303,12 @@
                           <div class="clearfix add_margin_30 hidden-xs"></div>
                         <?php } ?>                                                  
                       <?php } ?>
-                      <div class="clearfix add_margin_30 visible-xs"></div>
                       <?php if ($component_sample_counter % 2 == 0) { ?>
                         <?php if (!(($interactive_example_requested_grid == 12) || ($interactive_example_requested_grid == 6))) { ?>
                           <div class="clearfix add_margin_30 visible-sm"></div>
                         <?php } ?>
                       <?php } ?>
+                      <div class="clearfix add_margin_30 visible-xs"></div>
                       <?php $component_sample_counter++; ?>
 
                     <?php endwhile; ?>
