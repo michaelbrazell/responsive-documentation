@@ -159,8 +159,12 @@
                           <div class="clearfix add_margin_30 hidden-xs"></div>
                         <?php } ?>                                                  
                       <?php } ?>
-                      <?php $component_sample_counter++; ?>
                       <div class="clearfix add_margin_30 visible-xs"></div>
+                      <?php if ($component_sample_counter % 2 == 0) { ?>
+                        <div class="clearfix add_margin_30 visible-sm"></div>
+                      <?php } ?>
+                      <?php $component_sample_counter++; ?>
+
                     <?php endwhile; ?>
                   </div>
 
@@ -287,8 +291,11 @@
                           <div class="clearfix add_margin_30 hidden-xs"></div>
                         <?php } ?>                                                  
                       <?php } ?>
-                      <?php $component_sample_counter++; ?>
                       <div class="clearfix add_margin_30 visible-xs"></div>
+                      <?php if ($component_sample_counter % 2 == 0) { ?>
+                        <div class="clearfix add_margin_30 visible-sm"></div>
+                      <?php } ?>
+                      <?php $component_sample_counter++; ?>
                     <?php endwhile; ?>
                   </div>
 
