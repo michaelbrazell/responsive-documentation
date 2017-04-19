@@ -105,8 +105,6 @@
                   <?php
                     //Determine how many HTML examples there are
                     $interactive_example_count = count(get_field('component_markup'));
-                    echo $interactive_example_count;
-                    print_r(get_field('component_markup'));
                     
                     if (get_field('component_interactive_markup_grid')) {
                     
@@ -131,7 +129,7 @@
                     }
                   ?>
 
-                  <?php if ($interactive_example_count > 0) { ?>
+                  <?php if (!(get_the_content())) { ?>
                     <div class="row">
                       <?php $component_sample_counter = 1; ?>
                       <?php while (have_rows('component_markup')) : the_row(); ?>               
