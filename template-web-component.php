@@ -20,6 +20,7 @@
                     <?php while ( have_posts() ) : the_post(); ?>
                       <?php the_content(); ?>
                     <?php endwhile; // end of the loop. ?>
+                    <?php wp_reset_postdata(); ?>
                   </div>
                   <div class="col-xs-12 col-sm-4 col-lg-3">
                     <div class="wp_responsive_doc wp_responsive_doc_toc">
