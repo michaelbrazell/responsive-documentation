@@ -105,6 +105,7 @@
                   <?php
                     //Determine how many HTML examples there are
                     $interactive_example_count = count(get_field('component_markup'));
+                    echo $interactive_example_count;
                     
                     if (get_field('component_interactive_markup_grid')) {
                     
