@@ -229,6 +229,10 @@
                     </section>
                   <?php } ?>
 
+                  <?php if (get_the_content()) { ?>
+                    <div class="clearfix add_margin_60"></div>
+                  <?php } ?>                  
+
                 <?php endforeach; ?>
               <?php wp_reset_postdata(); ?>
               <?php } ?>
