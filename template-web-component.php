@@ -92,6 +92,7 @@
               <?php $associated_elements = get_field('associated_elements'); ?>
               <?php if ($associated_elements) { ?>
                 <?php foreach($associated_elements as $post): ?>
+                  <?php setup_postdata($post); ?>
 
                   <h2 class="wp_responsive_doc" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?></span></h2>
 
