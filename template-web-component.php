@@ -198,7 +198,7 @@
                             <h3>Usage Guidelines</h3>
                             <?php the_field('component_use'); ?>
                           <?php } ?> 
-                          <?php if ((get_field('component_options')) || (get_sub_field('component_options_html'))) { ?>
+                          <?php if ((get_field('component_options')) || (get_field('component_options_html'))) { ?>
                             <h3>Design and Implementation Options</h3>
                             <?php if (get_field('component_options_html')) { ?>
                               <?php the_field('component_options_html'); ?>
@@ -342,7 +342,7 @@
                           <h3>Usage Guidelines</h3>
                           <?php the_field('component_use'); ?>
                         <?php } ?> 
-                        <?php if ((get_field('component_options')) || (get_sub_field('component_options_html'))) { ?>
+                        <?php if ((get_field('component_options')) || (get_field('component_options_html'))) { ?>
                           <h3>Design and Implementation Options</h3>
                           <?php if (get_field('component_options_html')) { ?>
                             <?php the_field('component_options_html'); ?>
