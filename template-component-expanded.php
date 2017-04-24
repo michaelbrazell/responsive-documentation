@@ -8,7 +8,7 @@
 <?php get_header(); ?>
 
     <div class="row-offcanvas row-offcanvas-left">
-      <div class="content_container subpage component_template">
+      <div class="content_container subpage component_template"  style="background: orange !important">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
