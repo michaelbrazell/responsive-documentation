@@ -122,7 +122,7 @@
                     
                       <div style="height:200px; background: red;"></div>
 
-                    <?
+                    <?php
                       if ($interactive_example_count == 1) {
                         $interactive_example_grid = "col-xs-12";
                       } elseif ($interactive_example_count == 2) {                    
