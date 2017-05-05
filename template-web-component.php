@@ -422,7 +422,6 @@
       </div>
       <div class="modal-body">
         <pre class="modal_markup"></pre>
-        <div class="modal_notes"></div>
         <p class="add_margin_0"><small class="small_70">Check the Detailed Configuration Information for this component for more implementation options.</small></p>
       </div>
     </div>
