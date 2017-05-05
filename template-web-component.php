@@ -79,15 +79,6 @@
               <!-- WP Editor: END -->
               
               
-              <!-- WYSIWYG Content: START -->
-              <?php if (get_field('wysiwyg_content')) { ?>
-                <section class="wp_responsive_doc add_margin_60">
-                  <?php the_field('wysiwyg_content'); ?>
-                </section>
-              <?php } ?> 
-              <!-- WYSIWYG Content: START -->
-
-
               <!-- Component: Associated Elements: START -->
               <?php $associated_elements = get_field('associated_elements'); ?>
               <?php if ($associated_elements) { ?>
@@ -146,7 +137,7 @@
                           <?php } elseif ($interactive_example_count >= 1) { ?>
                             <div class="doc_key_container">
                               <div class="doc_key reference_key">
-                                <a href="#" data-toggle="modal" data-target="#component_markup_modal" data-title="<?php the_field('component_variation_name'); ?>" data-subtitle="<?php the_sub_field('component_interactive_markup_title'); ?>" data-component="<?php echo get_the_ID(); ?>" data-subcomponent="<?php echo $component_sample_counter; ?>" data-markup="<?php echo urlencode(get_sub_field('component_sample_markup')); ?>">&lt;/&gt;</a>
+                                <a href="#" data-toggle="modal" data-target="#component_markup_modal" data-title="<?php the_field('component_variation_name'); ?>" data-subtitle="<?php the_sub_field('component_interactive_markup_title'); ?>" data-component="<?php echo get_the_ID(); ?>" data-subcomponent="<?php echo $component_sample_counter; ?>" data-markup="<?php echo urlencode(get_sub_field('component_sample_markup')); ?>" data-notes="<?php echo urlencode(get_field('component_additional_markup')); ?>">&lt;/&gt;</a>
                               </div>
                               <div class="doc_key reference_key"><a href="<?php the_permalink(); ?>?subcomponent=<?php echo $component_sample_counter; ?>" target="_blank"><span class="icon-mobile icon_16"></span></a></div>
                             </div>
@@ -431,6 +422,7 @@
       </div>
       <div class="modal-body">
         <pre class="modal_markup"></pre>
+        <div class="modal_notes"></div>
         <p class="add_margin_0"><small class="small_70">Check the Detailed Configuration Information for this component for more implementation options.</small></p>
       </div>
     </div>
@@ -446,13 +438,16 @@ $('#component_markup_modal').on('show.bs.modal', function (event) {
   var recipient_title = button.data('title'); // Extract info from data-* attributes
   var recipient_subtitle = button.data('subtitle'); // Extract info from data-* attributes
   var recipient_markup = decodeURIComponent(button.data('markup')); // Extract info from data-* attributes
+  var recipient_notes = decodeURIComponent(button.data('notes')); // Extract info from data-* attributes
   recipient_markup = decodeURIComponent((recipient_markup+'').replace(/\+/g, '%20'));
+  recipient_notes = decodeURIComponent((recipient_notex+'').replace(/\+/g, '%20'));
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this);
   modal.find('.modal_title').text(recipient_title);
   modal.find('.modal_subtitle').text(recipient_subtitle);
   modal.find('.modal_markup').html(recipient_markup);
+  modal.find('.modal_notes').html(recipient_notes);
 })                
   
 })(jQuery); 
