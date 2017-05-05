@@ -440,7 +440,7 @@ $('#component_markup_modal').on('show.bs.modal', function (event) {
   var recipient_markup = decodeURIComponent(button.data('markup')); // Extract info from data-* attributes
   var recipient_notes = decodeURIComponent(button.data('notes')); // Extract info from data-* attributes
   recipient_markup = decodeURIComponent((recipient_markup+'').replace(/\+/g, '%20'));
-  recipient_notes = decodeURIComponent((recipient_notex+'').replace(/\+/g, '%20'));
+  recipient_notes = decodeURIComponent((recipient_notes+'').replace(/\+/g, '%20'));
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this);
