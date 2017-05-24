@@ -264,6 +264,9 @@ h5.wp_responsive_doc,
 
   .menu-offcanvas-nav-container li.current-menu-item > a { color:#000; }
 
+  .menu-offcanvas-nav-container ul > li.nav_unlinked_parent { cursor:default; }
+  .menu-offcanvas-nav-container ul > li.nav_unlinked_parent > a { color:#6f6f6f !important; }
+
   .menu-item-has-children > a { padding-bottom:3px; border-bottom:1px solid rgba(0,0,0,.25); display:block; }
   .menu-item-has-children { padding-top:3px; }
 
