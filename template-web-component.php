@@ -21,6 +21,32 @@
                       <?php the_content(); ?>
                     <?php endwhile; // end of the loop. ?>
                     <?php wp_reset_postdata(); ?>
+
+                    <!-- Working Examples: START -->
+                    <?php if(have_rows('working_examples')) { ?>
+                      <h3>Working Examples</h3>
+                      <ul>
+                        <?php while (have_rows('working_examples')) : the_row(); ?>
+                          <li><a href="<?php the_sub_field('working_example_link'); ?>" target="_blank"><?php the_sub_field('working_example_title'); ?></a></li>
+                        <?php endwhile; ?>
+                      </ul>
+                    <?php } ?>
+                    <!-- Working Examples: END -->
+
+
+                    <!-- Related Components: START -->
+                    <?php $related_components = get_field('related_components'); ?>
+                    <?php if ($related_components) { ?>
+                      <h3>Related Components</h3>
+                      <ul>
+                        <?php foreach( $related_components as $post): ?>
+                          <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                        <?php endforeach; ?>
+                      </ul>
+                      <?php wp_reset_postdata(); ?>
+                    <?php } ?>
+                    <!-- Related Components: END -->   
+
                   </div>
                   <div class="col-xs-12 col-sm-4 col-lg-3">
                     <div class="wp_responsive_doc wp_responsive_doc_toc">
@@ -48,33 +74,6 @@
                     </div>                                                                
                   </div>
                 </div>
-
-
-                <!-- Working Examples: START -->
-                <?php if(have_rows('working_examples')) { ?>
-                  <h3>Working Examples</h3>
-                  <ul>
-                    <?php while (have_rows('working_examples')) : the_row(); ?>
-                      <li><a href="<?php the_sub_field('working_example_link'); ?>" target="_blank"><?php the_sub_field('working_example_title'); ?></a></li>
-                    <?php endwhile; ?>
-                  </ul>
-                <?php } ?>
-                <!-- Working Examples: END -->
-
-
-                <!-- Related Components: START -->
-                <?php $related_components = get_field('related_components'); ?>
-                <?php if ($related_components) { ?>
-                  <h3>Related Components</h3>
-                  <ul>
-                    <?php foreach( $related_components as $post): ?>
-                      <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                    <?php endforeach; ?>
-                  </ul>
-                  <?php wp_reset_postdata(); ?>
-                <?php } ?>
-                <!-- Related Components: END -->                                 
-                
               </section>
               <!-- WP Editor: END -->
               
