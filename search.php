@@ -55,14 +55,6 @@
       <div class="sidebar-offcanvas" id="sidebar" role="navigation">
         <nav class="navbar navbar-default" role="navigation">
           <div class="collapse navbar-collapse no-transition" id="bs-example-navbar-collapse-1">
-            <form role="search" method="get" class="search-form add_margin_20" action="http://web_standards.insidelabs.mathworks.com/">
-              <div class="input-group">
-                <input type="search" id="search-field" class="search-field form-control" placeholder="Search …" value="" name="s" title="Search for:">
-                <span class="input-group-btn">
-                  <input type="submit" class="search-submit btn btn-primary" value="Go!">
-                </span>
-              </div>
-            </form>          
             <?php wp_nav_menu( array('menu' => 'TopNav')); ?>
           </div>
         </nav>
