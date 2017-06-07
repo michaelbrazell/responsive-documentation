@@ -475,6 +475,14 @@ h5.wp_responsive_doc,
     }
 
 
+
+/*-----------------------------------
+   Page Specific
+-----------------------------------*/
+/* ---- Search ---- */
+.search-results .wp_responsive_doc h2.entry-title { margin-bottom:5px; font-size:20px; }
+
+
 /*-----------------------------------
    Responsive
 -----------------------------------*/
