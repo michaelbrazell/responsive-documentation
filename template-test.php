@@ -17,7 +17,7 @@
                 <ul class="list-unstyled media_list">
                   <?php
                     
-                  $media_args = array('post_type' => 'elements', 'orderby' => 'title', 'order' => 'DESC', 'posts_per_page' => -1);
+                  $media_args = array('post_type' => 'element', 'orderby' => 'title', 'order' => 'DESC', 'posts_per_page' => -1);
                   $media_loop = new WP_Query( $media_args );
                 
                   while ($media_loop->have_posts() ) : $media_loop->the_post(); ?>
