@@ -86,7 +86,7 @@
 
                   <h2 class="wp_responsive_doc" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?></span></h2>
 
-                  <?php if ((get_the_content()) && (get_field('component_use_wp_editor') == "true")) { ?>
+                  <?php if (get_field('component_use_wp_editor') == "true") { ?>
                     <section class="wp_responsive_doc">
                       <?php the_content(); ?>
                     </section>
@@ -220,7 +220,7 @@
                     </section>
                   <?php } ?>
 
-                  <?php if ((get_the_content()) && (get_field('component_use_wp_editor') == "true")) { ?>
+                  <?php if (get_field('component_use_wp_editor') == "true") { ?>
                     <div class="clearfix add_margin_60"></div>
                   <?php } ?>                  
 
