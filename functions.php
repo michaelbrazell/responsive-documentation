@@ -1,4 +1,3 @@
-<?php include 'shortcodes.php'; ?>
 <?php
 /**
  * responsive-documentation functions and definitions.
