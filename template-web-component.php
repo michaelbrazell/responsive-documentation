@@ -120,7 +120,7 @@
                   ?>
 
                   <?php //if (!(get_the_content())) { ?>
-                  <?php if (get_field('component_use_wp_editor') == "false") { ?>
+                  <?php if (get_field('component_use_wp_editor') != "true") { ?>
                     <div class="row">
                       <?php $component_sample_counter = 1; ?>
                       <?php while (have_rows('component_markup')) : the_row(); ?>               
