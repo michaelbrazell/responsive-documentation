@@ -482,7 +482,7 @@ h5.wp_responsive_doc,
 /* ---- Search ---- */
 .search-results .wp_responsive_doc h2.entry-title { margin-bottom:5px; font-size:20px; }
 
-.search-results .wp_responsive_doc .relevanssi-query-term { padding:0 2px; border-radius:5px; background-color:#54d0ff; background-color:rgba(0,161,217,.15); display:inline-block; }
+.search-results .wp_responsive_doc .searchwp-highlight { padding:0 2px; border-radius:5px; background-color:#54d0ff; background-color:rgba(0,161,217,.15); display:inline-block; }
 
 
 /*-----------------------------------
