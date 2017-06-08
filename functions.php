@@ -21,9 +21,9 @@ function my_searchwp_custom_fields( $customFieldValue, $customFieldName, $thePos
           if( is_array( $postData ) && !empty( $postData ) ) {
             foreach( $postData as $postID ) {
               $title = get_the_title( absint( $postID ) );
-              $component_description = get_field('component_description', $postID);
-              $component_use = get_field('component_use', $postID);
-              $component_options = get_field('component_options', $postID);
+              $component_description = get_field('component_description');
+              $component_use = get_field('component_use');
+              $component_options = get_field('component_options');
               $contentToIndex .= $title . ' ' . $component_description . ' ' . $component_use . ' ' . $component_options . ' ';
             }
           }
