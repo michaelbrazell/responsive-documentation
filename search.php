@@ -8,11 +8,11 @@
  */
 ?>
 
+<?php get_header(); ?>
+
 <style>
 .entry-footer { display:none; }
 </style>
-
-<?php get_header(); ?>
 
     <div class="row-offcanvas row-offcanvas-left">
       <div class="content_container subpage component_template">
