@@ -163,3 +163,48 @@ require_once('wp_bootstrap_navwalker.php');
 add_editor_style('/css/tinymce.css');
 
 
+/** SearchWP - ACF Relationship Search
+
+Advanced Custom Fields has a Relationship field that allows you to define what
+is considered related to the current post. Under the hood it simply stores the
+post IDs of the related items, but post IDs don’t make much sense to add as
+searchable content. To inject your own code during the time SearchWP is indexing
+this Custom Field and tell SearchWP to index the titles instead of the post IDs,
+add the following to your active theme’s functions.php:
+
+https://searchwp.com/docs/hooks/searchwp_custom_fields/
+*/
+function my_searchwp_custom_fields( $customFieldValue, $customFieldName, $thePost ) {
+  // by default we're just going to send the original value back
+  $contentToIndex = $customFieldValue;
+  // check to see if this is one of the ACF Relationship fields we want to process
+  if( in_array( strtolower( $customFieldName ), array( 'associated_elements', 'associated_elements_addons' ) ) ) {
+    // we want to index the titles, not the post IDs, so we'll wipe this out and append our titles to it
+    $contentToIndex = '';
+    // related posts are stored in an array
+    if( is_array( $customFieldValue ) ) {
+      foreach( $customFieldValue as $relatedPostData ) {
+        if( is_numeric( $relatedPostData ) ) { // if you set the Relationship to store post IDs, it's numeric
+          $title = get_the_title( $relatedPostData );
+          $contentToIndex .= $title . ' ';
+        } else { // it's an array of objects
+          $postData = maybe_unserialize( $relatedPostData );
+          if( is_array( $postData ) && !empty( $postData ) ) {
+            foreach( $postData as $postID ) {
+              $title = get_the_title( absint( $postID ) );
+              $component_variation_name = get_field('component_variation_name', $postID);
+              $component_description = get_field('component_description', $postID);
+              $component_use = get_field('component_use', $postID);
+              $component_options = get_field('component_options', $postID);
+              $contentToIndex .= $title . ' ' . $component_variation_name . ' ' . $component_description . ' ' . $component_use . ' ' . $component_options . ' ';
+            }
+          }
+        }
+      }
+    }
+  }
+  return $contentToIndex;
+}
+add_filter( 'searchwp_custom_fields', 'my_searchwp_custom_fields', 10, 3 );
+
+
