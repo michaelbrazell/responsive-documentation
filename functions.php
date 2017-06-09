@@ -193,10 +193,11 @@ function my_searchwp_custom_fields( $customFieldValue, $customFieldName, $thePos
             foreach( $postData as $postID ) {
               $title = get_the_title( absint( $postID ) );
               $component_variation_name = get_field('component_variation_name', $postID);
+              $component_content = get_the_content();
               $component_description = get_field('component_description', $postID);
               $component_use = get_field('component_use', $postID);
               $component_options = get_field('component_options', $postID);
-              $contentToIndex .= $title . ' ' . $component_variation_name . ' ' . $component_description . ' ' . $component_use . ' ' . $component_options . ' ';
+              $contentToIndex .= $title . ' ' . $component_variation_name . ' ' . $component_content . ' ' . $component_description . ' ' . $component_use . ' ' . $component_options . ' ';
             }
           }
         }
