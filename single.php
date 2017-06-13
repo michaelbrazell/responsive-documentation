@@ -6,30 +6,38 @@
  *
  * @package responsive-documentation
  */
+?>
+<?php get_header(); ?>
 
-get_header(); ?>
+    <div class="row-offcanvas row-offcanvas-left">
+      <div class="content_container subpage">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+              <div class="wp_responsive_doc">
+                <?php while ( have_posts() ) : the_post(); ?>
+                  <h1><?php the_title(); ?></h1>
+                  <?php the_content(); ?>
+                <?php endwhile; // end of the loop. ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-offcanvas" id="sidebar" role="navigation">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="collapse navbar-collapse no-transition" id="bs-example-navbar-collapse-1">
+            <?php wp_nav_menu( array('menu' => 'TopNav')); ?>
+          </div>
+        </nav>
+      </div>
+      <div class="clearfix"></div>
+      <?php get_footer(); ?>
+    </div>
+    
+  </div><!-- #content -->
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+</div><!-- #page -->
 
-		<?php
-		while ( have_posts() ) : the_post();
-
-			get_template_part( 'template-parts/content', get_post_format() );
-
-			the_post_navigation();
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+</body>
+</html>
