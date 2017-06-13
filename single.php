@@ -16,6 +16,8 @@
             <div class="col-xs-12 col-lg-10 col-lg-offset-1">
               <div class="wp_responsive_doc">
                 <?php while ( have_posts() ) : the_post(); ?>
+                  <?php $news_date = get_the_time('F j, Y', $post->ID); ?>
+                  <p class="news_publish_date add_margin_5"><?php echo $news_date; ?></p>
                   <h1><?php the_title(); ?></h1>
                   <?php the_content(); ?>
                 <?php endwhile; // end of the loop. ?>
