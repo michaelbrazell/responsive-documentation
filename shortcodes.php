@@ -55,6 +55,9 @@ function news_feed_shortcode($atts) {
     wp_reset_query();                 
   
   $news_feed_content .= '
+    <div class="doc_news_feature_footer">
+      <a href="/news">See all News</a>
+    </div>
   </div>';
   
   return $news_feed_content;
