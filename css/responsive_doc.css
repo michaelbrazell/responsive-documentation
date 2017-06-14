@@ -308,6 +308,9 @@ h5.wp_responsive_doc,
     .doc_news_feature .doc_news_element *:last-child { margin-bottom:0; }
     .doc_news_feature .doc_news_element +  .doc_news_element { margin-top:20px; }
 
+    .doc_news_feature [class*="wpb_"],
+    .doc_news_feature [class*="_wpb"] { margin:0 !important; }
+
     .doc_news_feature_footer { padding:10px 0; margin:20px 0 0; font-size:14px; text-align:right; }
 
 
