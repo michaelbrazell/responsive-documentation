@@ -25,25 +25,33 @@
       
                     <?php 
                       $alpha_elements = get_field('alpha_elements');
-                      $alpha_elements_count = count ($alpha_elements);
-                      $alpha_elements_col_count = ($alpha_elements_count / 4);
-                      $alpha_elements_col_count_round = round($alpha_elements_col_count);
+                      $element_ids = get_field('alpha_elements', false, false);
 
-                      //Alpha sort the list (Only IDs provided)
-                      $component_ids = get_field('alpha_elements', false, false);
+                      foreach ($element_ids as $element_id) { 
 
-                      foreach($component_ids as $component_id) { 
+                        $element_args = array('post_type' => 'element', 'p' => $element_id, 'posts_per_page' => -1);
+                        $element_loop = new WP_Query($element_args);
 
-                      //$component_args = array('post_type' => 'element', 'post__in' => $component_ids, 'orderby' => 'title', 'order' => 'ASC', 'posts_per_page' => -1);
-                      $component_args = array('post_type' => 'element', 'p' => $component_id, 'posts_per_page' => -1);
-                      $component_loop = new WP_Query($component_args);
+                        while ($element_loop->have_posts()) : $element_loop->the_post();
 
-                      while ($component_loop->have_posts() ) : $component_loop->the_post();
+                          //Query the associated_elements Relationship field for the Element ID
+                          $pages_args = array('post_type' => 'page', 'meta_query' => array(array('key' => 'associated_elements', 'value' => '"' . $element_id . '"', 'compare' => 'LIKE')), 'orderby' => 'title', 'order' => 'ASC', 'posts_per_page' => -1);
+                          $pages_loop = new WP_Query($pages_args);
+
+                          while ($pages_loop->have_posts()) : $pages_loop->the_post();
+
+                            $page_title = get_the_title();
+                            $page_link = get_the_permalink();
+
+                          endwhile;
+                          $element_loop->reset_postdata();
 
                     ?>
 
                       <!-- Component: Associated Elements: START -->
-                      <h2 class="wp_responsive_doc" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?></span></h2>
+                      <h2 class="wp_responsive_doc" id="element_<?php echo get_the_ID(); ?>">
+                        <a href="<?php echo $page_link ?>"><?php the_field('component_variation_name'); ?></a>
+                      </h2>
 
                       <?php if (get_the_content()) { ?>
                         <section class="wp_responsive_doc">
@@ -84,6 +92,7 @@
                           <?php while (have_rows('component_markup')) : the_row(); ?>               
                             <div class="<?php echo $interactive_example_grid; ?>">
                               <?php /*
+                              //Code and Responsive Tester Buttons
                               <?php if ($interactive_example_count > 1) { ?>
                                 <div class="doc_key_container">
                                   <div class="doc_key"><?php echo $component_sample_counter; ?></div>
@@ -138,6 +147,7 @@
                         </div>
 
                         <?php /*
+                        //Detailed Configuration Information
                         <section class="wp_responsive_doc add_margin_60">
                           <button class="btn btn_secondary collapsed" role="button" data-toggle="collapse" href="#individual_component_detail_<?php echo get_the_ID(); ?>" aria-expanded="false" aria-controls="individual_component_detail_<?php echo get_the_ID(); ?>">Detailed Configuration Information for <?php the_field('component_variation_name'); ?></button>                
                           <div class="panel panel-default collapse" id="individual_component_detail_<?php echo get_the_ID(); ?>" aria-expanded="false">
