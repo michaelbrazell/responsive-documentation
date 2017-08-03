@@ -37,8 +37,11 @@
 
                     ?>
 
-                    <h3>Component Count: <?php echo $alpha_component_count; ?></h3>
 
+                    <h3>Component Browser</h3>
+                    <p class="add_margin_30"><a href="/component-visualizer/">Component Visualizer</a></p>                      
+
+                    <h3>Component List</h3>
                     <div class="component_list">                      
                       <?php
                         if ($alpha_components) {
@@ -71,7 +74,10 @@
                         }
                       ?>
                       </ul>
-                    </div>  
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <h4>Component Count: <?php echo $alpha_component_count; ?></h4>  
                   </section>
                 </div>
               </div>
