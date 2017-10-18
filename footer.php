@@ -20,5 +20,15 @@
       </div>
     </div>
   </footer>
+
+  <!-- BEGIN Adobe DTM -->
+  <script>
+  try {
+  _satellite.pageBottom();
+  } catch (e) {
+  //something went wrong
+  }
+  </script>
+  <!-- END Adobe DTM -->    
   
 <?php wp_footer(); ?>
