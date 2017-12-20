@@ -259,7 +259,7 @@ h5.wp_responsive_doc,
   .menu-offcanvas-nav-container a:active,
   .menu-offcanvas-nav-container a:visited { color:#6f6f6f; text-decoration:none; }
   .menu-offcanvas-nav-container a:hover { color:#000; text-decoration:none; }
-  .menu-offcanvas-nav-container ul > li {  padding-left:0; margin-bottom:10px; }
+  .menu-offcanvas-nav-container ul > li {  padding-left:0; margin-bottom:10px; line-height:1.25; }
   .menu-offcanvas-nav-container > ul > li { font-size:15px; font-weight:500; }
   .menu-offcanvas-nav-container li > ul.sub-menu { padding-top:10px; padding-left:7px; font-weight:400; }
 
@@ -297,23 +297,6 @@ h5.wp_responsive_doc,
 
     /* Home Page */
     .home .content_container { padding-right:40px; padding-left:40px; }
-
-    .standards_homepage_sidebar { font-size:16.5px; }
-    .standards_homepage_sidebar .doc_news_feature > h3 { padding-bottom:3px; margin-bottom:15px; border-bottom:1px solid rgba(0,0,0,.25); color:#6f6f6f; font-weight:500; }
-
-    .doc_news_feature { padding:15px 15px 0; background-color:rgba(230,230,230,0.5); font-size:15px; }
-    .doc_news_feature .doc_news_element h3 { margin-bottom:3px; font-size:16px; font-weight:500; }
-    .doc_news_feature .doc_news_element .news_publish_date { margin-bottom:3px; font-size:13px; } 
-    .doc_news_feature .doc_news_element .more-link { display:none; }
-    .doc_news_feature .doc_news_element *:last-child { margin-bottom:0; }
-    .doc_news_feature .doc_news_element +  .doc_news_element { margin-top:20px; }
-
-    .doc_news_element [class*="wpb_"],
-    .doc_news_element [class*="_wpb"] { margin:0 !important; }
-
-    .doc_news_feature_footer { padding:10px 0; margin:20px 0 0; font-size:14px; text-align:right; }
-
-
     .home .component_list ul { margin:0 30px 30px 0; float:left; }
     .home .alpha_components_clearfix { display:none; }
 
@@ -334,9 +317,7 @@ h5.wp_responsive_doc,
     @media (max-width:686px) {
       .home .component_list ul { width:100%; margin-right:0; margin-bottom:0; }
     }
-
-
-
+  
 
   /* ---- TOC ---- */
   .wp_responsive_doc_toc { padding:0 15px 15px; margin:8px 0 18px; background:#f4f4f4; font-size:14px; }
@@ -360,13 +341,6 @@ h5.wp_responsive_doc,
   .breakpoint_indicator.visible-sm { background:#247BA0; }
   .breakpoint_indicator.visible-xs { background:#38AECC; }
   .breakpoint_indicator .breakpoint_code { color:rgba(255,255,255,0.5); float:right; }
-
-
-  /* ---- News Template ---- */
-  .template_news .doc_news_element { margin-bottom:30px; }
-  .template_news .doc_news_element h3 { margin-bottom:3px; font-weight:500; }
-  .template_news .doc_news_element .news_publish_date { margin-bottom:3px; font-size:85%; } 
-  .template_news .doc_news_element .more-link { display:none; }
 
 
   /* ---- Comments ---- */
