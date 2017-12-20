@@ -259,7 +259,7 @@ h5.wp_responsive_doc,
   .menu-offcanvas-nav-container a:active,
   .menu-offcanvas-nav-container a:visited { color:#6f6f6f; text-decoration:none; }
   .menu-offcanvas-nav-container a:hover { color:#000; text-decoration:none; }
-  .menu-offcanvas-nav-container ul > li {  padding-left:0; margin-bottom:10px; }
+  .menu-offcanvas-nav-container ul > li {  padding-left:0; margin-bottom:10px; line-height:1.25; }
   .menu-offcanvas-nav-container > ul > li { font-size:15px; font-weight:500; }
   .menu-offcanvas-nav-container li > ul.sub-menu { padding-top:10px; padding-left:7px; font-weight:400; }
 
