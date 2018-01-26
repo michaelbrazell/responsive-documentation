@@ -209,4 +209,11 @@ function my_searchwp_custom_fields( $customFieldValue, $customFieldName, $thePos
 }
 add_filter( 'searchwp_custom_fields', 'my_searchwp_custom_fields', 10, 3 );
 
+/**
+  * Enable WP-API CORS
+	*/
+
+add_filter( 'allowed_http_origin', '__return_true' );
+
+
 
