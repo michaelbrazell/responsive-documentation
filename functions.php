@@ -209,21 +209,4 @@ function my_searchwp_custom_fields( $customFieldValue, $customFieldName, $thePos
 }
 add_filter( 'searchwp_custom_fields', 'my_searchwp_custom_fields', 10, 3 );
 
-/**
-  * Enable WP-API CORS
-	*/
-
-function allow_get_over_cors() {
-	remove_filter( 'rest_pre_serve_request', 'rest_send_cors_headers' );
-	add_filter( 'rest_pre_serve_request', function( $value ) {
-		header( 'Access-Control-Allow-Origin: *' );
-		header( 'Access-Control-Allow-Methods: GET' );
-		header( 'Access-Control-Allow-Credentials: true' );
-		header( 'Access-Control-Expose-Headers: Link', false );
-		return $value;
-	} );
-}
-add_action( 'rest_api_init', 'allow_get_over_cors', 15 );
-
-
 
