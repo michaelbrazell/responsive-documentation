@@ -87,6 +87,9 @@ h5.wp_responsive_doc,
 .wp_responsive_doc h5 { padding:0; margin:0 0 5px; color:#666; font:normal 500 14px/1.333 'Roboto', sans-serif; }
 
 
+.alert h3.wp_responsive_doc,
+.alert .wp_responsive_doc h3 { color:inherit; }
+
 
 .wp_responsive_doc strong { font-family: 'Roboto', sans-serif; font-weight:700; }
 .wp_responsive_doc strong em,
