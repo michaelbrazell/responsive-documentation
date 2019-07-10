@@ -115,7 +115,7 @@ h5.wp_responsive_doc,
 .wp_responsive_doc .btn_secondary:active { box-shadow:none; }
 
 .doc_key { width: 25px; height: 25px; padding: 6px 7px 7px 7px; margin: 0 20px 15px 0; border-radius: 50%; background-color: #0072bc; color: #fff; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; float: left; text-align: center; }
-span.doc_key { margin:0; display:inline-block; float:none; }
+span.doc_key { width: 20px; height: 20px; padding: 4px 0 0; margin: 0; display: inline-block; float: none; font-size: 11px; position: relative; top: -2px; }
 
 .doc_key_container { margin:0 0 15px; overflow: hidden; }
 .doc_key_container .doc_key { width:26px; height:26px; padding: 8px 0; margin:0 10px 0 0; font-size:14px; line-height:90%; }
