@@ -84,7 +84,7 @@
                 <?php foreach($associated_elements as $post): ?>
                   <?php setup_postdata($post); ?>
 
-                  <h2 class="wp_responsive_doc" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?></span></h2>
+                  <h2 class="wp_responsive_doc" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?><?php if (get_field('component_a11y')) { ?> <sup type="button" data-toggle="tooltip" data-placement="right" title="This component includes A11y implementation information">A11y</sup><?php } ?></span></h2>
 
                   <?php if (get_the_content()) { ?>
                     <section class="wp_responsive_doc">
@@ -195,7 +195,11 @@
                             <?php } else { ?>
                               <?php the_field('component_options'); ?>
                             <?php } ?>
-                          <?php } ?>  
+                          <?php } ?>
+                          <?php if (get_field('component_a11y')) { ?>
+                            <h3>Accessibility | A11y Implementation Information</h3>
+                            <?php the_field('component_a11y'); ?>
+                          <?php } ?>                           
                           <?php if (have_rows('component_markup')) { ?>
                             <h3>Markup</h3>
                             <?php $component_markup_counter = 1; ?>
