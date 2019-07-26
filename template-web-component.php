@@ -241,7 +241,7 @@
 
                 <?php foreach($associated_elements_addons as $post): ?>
 
-                  <h3 class="wp_responsive_doc add_margin_20" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?></span></h3>
+                  <h3 class="wp_responsive_doc add_margin_20" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?><?php if (get_field('component_a11y')) { ?> <sup type="button" data-toggle="tooltip" data-placement="right" title="This component includes A11y implementation information">A11y</sup><?php } ?></span></h3>
                   <?php
                     //Determine how many HTML examples there are
                     $interactive_example_count = count(get_field('component_markup'));
@@ -344,7 +344,11 @@
                           <?php } else { ?>
                             <?php the_field('component_options'); ?>
                           <?php } ?>
-                        <?php } ?>  
+                        <?php } ?> 
+                        <?php if (get_field('component_a11y')) { ?>
+                          <h3>Accessibility | A11y Implementation Information</h3>
+                          <?php the_field('component_a11y'); ?>
+                        <?php } ?>                          
                         <?php if (have_rows('component_markup')) { ?>
                           <h3>Markup</h3>
                           <?php $component_markup_counter = 1; ?>
