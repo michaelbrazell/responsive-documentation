@@ -24,6 +24,23 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
+  <?php 
+    //Dynamically Remove CSS Caching
+    $css_gb_file = 'responsive_doc.css';
+
+    $theme_path = get_template_directory_uri();
+    $theme_css_path = $theme_path . '/css/';
+
+    $css_gb = $theme_css_path . $css_gb_file;
+
+    $filetime_path = strpos($theme_css_path, 'wp-content');
+    $filetime_path = substr($theme_css_path, $filetime_path);
+
+    $css_gb_filetime = $filetime_path . $css_gb_file;
+
+    $css_gb = $css_gb . '?' . date("YmdHis", filemtime($css_gb_filetime));
+  ?>
+  <link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6.css?201507" rel="stylesheet" type="text/css">
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)">
@@ -38,7 +55,7 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 <script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/anchor.js"></script>
 <script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/bootstrap/responsive-tabs.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700italic' rel='stylesheet' type='text/css'>
-<link href="<?php echo get_template_directory_uri(); ?>/css/responsive_doc.css" rel="stylesheet" type="text/css">
+<link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
 <script src="<?php echo get_template_directory_uri(); ?>/js/responsive_doc.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/offcanvas.js"></script>
 <!-- BEGIN Adobe DTM -->
