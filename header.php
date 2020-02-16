@@ -39,6 +39,8 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
     $css_gb_filetime = $filetime_path . $css_gb_file;
 
     $css_gb = $css_gb . '?' . date("YmdHis", filemtime($css_gb_filetime));
+
+    echo $css_gb;
   ?>
   <link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
