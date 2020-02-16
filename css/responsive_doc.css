@@ -173,6 +173,21 @@ span.doc_key { width: 20px; height: 20px; padding: 4px 0 0; margin: 0; display: 
 .wp_responsive_doc .doc_color_chip_container .doc_key_absolute { position:absolute; }
 .wp_responsive_doc .doc_color_chip_container .doc_color_chip_swatch .doc_key { background:#fff; color:#004b87; }
 
+
+.wp_responsive_doc .scale { width:1000px; height:900px; border:0px;
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
 .spacing-grid-example { padding:0 15px; }
 .spacing-grid-example .row { border-top:1px dotted #999; border-right:1px dotted #999; }
 .spacing-grid-example .row + .row { border-top:none; }
