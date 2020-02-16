@@ -173,8 +173,8 @@ span.doc_key { width: 20px; height: 20px; padding: 4px 0 0; margin: 0; display: 
 .wp_responsive_doc .doc_color_chip_container .doc_key_absolute { position:absolute; }
 .wp_responsive_doc .doc_color_chip_container .doc_color_chip_swatch .doc_key { background:#fff; color:#004b87; }
 
-.wp_responsive_doc .iframe_container { width:550px; margin-bottom:10px; border:1px solid #dadada; overflow:hidden; }
-.wp_responsive_doc .iframe_pane { width:1050px; height:400px; margin-left:20px; overflow:hidden; }
+.wp_responsive_doc .iframe_container { width:550px; margin:0 0 10px 20px; border:1px solid #dadada; overflow:hidden; }
+.wp_responsive_doc .iframe_pane { width:1050px; height:400px; overflow:hidden; }
 
 .wp_responsive_doc .scale { width:2000px; height:900px; border:0;
     -ms-transform: scale(0.5);
