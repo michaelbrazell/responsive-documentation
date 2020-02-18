@@ -19,7 +19,7 @@
                 <?php endwhile; // end of the loop. ?>
                 
                 <?php
-                $news_args = array('post_type' => 'post', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => $post_count);
+                $news_args = array('post_type' => 'post', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => -1);
                 $news_loop = new WP_Query($news_args);
               
                 while ($news_loop -> have_posts()) : $news_loop->the_post();
