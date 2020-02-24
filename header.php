@@ -61,8 +61,7 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 <!-- BEGIN Adobe DTM -->
 <script src="//assets.adobedtm.com/d0cc0600946eb3957f703b9fe43c3590597a8c2c/satelliteLib-e8d23c2e444abadc572df06537e2def59c01db09.js"></script>
 <!-- END Adobe DTM -->
-<script src="https://fonts.mathworks.com/xvy5baa.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<link href="https://use.typekit.net/xvy5baa.css" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="site">
