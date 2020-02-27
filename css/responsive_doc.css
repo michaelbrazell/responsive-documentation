@@ -424,6 +424,9 @@ span.doc_key { width: 20px; height: 20px; padding: 4px 0 0; margin: 0; display: 
 
     .comment-list .comment-respond { padding:15px; margin:0 0 20px 0.875em;; background:rgba(209,211,212,.5); position:relative; }
 
+    /* Subscribe to Comments */
+    .comment-form-comment-subscribe input[type=checkbox] { margin-right:5px; position:relative; bottom:-2px; }
+
     /* ---- Mobile (xs) ---- */
     @media (max-width:767px) {
       .comment-list .comment-respond { margin:0 0 15px; }
