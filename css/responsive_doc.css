@@ -162,6 +162,7 @@ span.doc_key { width: 20px; height: 20px; padding: 4px 0 0; margin: 0; display: 
 .wp_responsive_doc .hi-lite { padding:0 2px; border-radius:5px; background-color:#54d0ff; background-color:rgba(0,161,217,.15); display:inline-block; }
 .wp_responsive_doc .hi-lite-02 { padding:0 2px; border-radius:5px; background-color:#00ff00; background-color:rgba(0,255,0,.15); display:inline-block; }
 .wp_responsive_doc .hi-lite-03 { padding:0 2px; border-radius:5px; background-color:#ffff00; background-color:rgba(255,255,0,.15); display:inline-block; }
+.wp_responsive_doc .hi-lite-04 { padding:0 2px; border-radius:5px; background-color:#ff00ff; background-color:rgba(255,0,255,.15); display:inline-block; }
 .wp_responsive_doc .hi-lite-remove { padding:0 2px; border-radius:5px; background-color:#ff0000; background-color:rgba(255,0,0,.5); display:inline-block; text-decoration:line-through; }
 
 .wp_responsive_doc .doc_color_chip_container { max-width:165px; margin:0 auto; position:relative; }
