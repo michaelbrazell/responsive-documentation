@@ -17,6 +17,11 @@
                   <h1><?php the_title(); ?></h1>
                   <?php the_content(); ?>
                 <?php endwhile; // end of the loop. ?>
+
+                <?php 
+                /* Template Name: Subscribe To Comments */
+                if (isset($wp_subscribe_reloaded)){ global $posts; $posts = $wp_subscribe_reloaded->stcr->subscribe_reloaded_manage(); } 
+                ?>                
               </div>
             </div>
           </div>
