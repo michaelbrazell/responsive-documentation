@@ -110,7 +110,7 @@ span.a11yified_add_component { margin-bottom:5px; bottom:auto; float:none; }
 
 .wp_responsive_doc .component_type { color:#333; color:#187dbb;  }
 
-.wp_responsive_doc .doc_swatch { width:25px; height:25px; border:1px solid #ccc; text-indent:-9999px; }
+.wp_responsive_doc .doc_swatch { width:25px; height:25px; border:1px solid #ccc; position:relative; text-indent:-9999px; }
 .wp_responsive_doc .doc_swatch .doc_swatch { width:23px; height:23px; border:none; text-indent:-9999px; }
 
 .wp_responsive_doc span.doc_swatch { padding: 12.5px; display: inline-block; vertical-align: text-bottom; }
