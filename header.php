@@ -49,7 +49,6 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)">
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_xs.css" rel="stylesheet" media="screen and (max-width: 767px)">
 <script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/jquery/jquery-latest.js"></script>
-<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/jquery/jquery.mobile.custom.min.js"></script>
 <script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/bootstrap/bootstrap.min.js"></script>
 <script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/global.js"></script>
 <script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/anchor.js"></script>
