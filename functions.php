@@ -164,6 +164,13 @@ require_once('wp_bootstrap_navwalker.php');
 add_editor_style('/css/tinymce.css');
 
 
+/**
+  Activate Shortcodes in ACF Textareas
+  https://support.advancedcustomfields.com/forums/topic/shortcodes-in-text-field/
+*/
+add_filter('acf/format_value/type=textarea', 'do_shortcode');
+
+
 /** SearchWP - ACF Relationship Search
 
 Advanced Custom Fields has a Relationship field that allows you to define what
