@@ -197,6 +197,9 @@ span.doc_key { width: 20px; height: 20px; padding: 4px 0 0; margin: 0; display: 
   /* Interactive Exmples iFrames */
   .interactive_example.wp_responsive_doc .iframe_container { width:auto; max-width:550px; margin-left:0; }
 
+.wp_responsive_doc .browser-shot img { border:1px solid #dadada; }
+
+
 .spacing-grid-example { padding:0 15px; }
 .spacing-grid-example .row { border-top:1px dotted #999; border-right:1px dotted #999; }
 .spacing-grid-example .row + .row { border-top:none; }
