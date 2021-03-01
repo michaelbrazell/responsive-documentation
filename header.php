@@ -13,7 +13,7 @@
 <?php
 // Set the track to pull all includes_content files from
 $ic_track = get_field('release_track', 102);
-$ic_track_mini = ltrim($ic_track, "http:/\/\www");
+$ic_track_mini = ltrim($ic_track, "https:/\/\www");
 $ic_track_mini = ltrim($ic_track_mini, "-");
 $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 ?>
@@ -21,7 +21,7 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 <html <?php language_attributes(); ?>><head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
   <?php 
