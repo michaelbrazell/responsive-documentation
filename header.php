@@ -42,12 +42,12 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
   ?>
   <link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6.css?201507" rel="stylesheet" type="text/css">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_sm+xs.css" rel="stylesheet" media="screen and (max-width: 991px)">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site6_xs.css" rel="stylesheet" media="screen and (max-width: 767px)">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7.css" rel="stylesheet" type="text/css">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_sm+xs.css" rel="stylesheet" media="screen and (max-width: 991px)">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)">
+<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_xs.css" rel="stylesheet" media="screen and (max-width: 767px)">
 <script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/jquery/jquery-latest.js"></script>
 <script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/bootstrap/bootstrap.min.js"></script>
 <script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/global.js"></script>
