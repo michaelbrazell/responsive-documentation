@@ -58,7 +58,7 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 <script src="<?php echo get_template_directory_uri(); ?>/js/responsive_doc.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/offcanvas.js"></script>
 <!-- BEGIN Adobe DTM -->
-<script src="//assets.adobedtm.com/d0cc0600946eb3957f703b9fe43c3590597a8c2c/satelliteLib-e8d23c2e444abadc572df06537e2def59c01db09.js"></script>
+<script src="//assets.adobedtm.com/d0cc0600946eb3957f703b9fe43c3590597a8c2c/satelliteLib-e8d23c2e444abadc572df06537e2def59c01db09.js" async></script>
 <!-- END Adobe DTM -->
 <link href="https://use.typekit.net/xvy5baa.css" rel="stylesheet">
 </head>
