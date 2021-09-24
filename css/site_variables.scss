@@ -95,8 +95,7 @@
 //-----------------------------------
 //   Fonts
 //-----------------------------------
-$google_font_stack: 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i';
-$primary_font-family: 'Open Sans', sans-serif;
+$primary_font-family: 'Roboto', sans-serif;
 //$secondary_font_family: '';
 //$tertiary_font_family: '';
 
@@ -105,8 +104,8 @@ $primary_font-family: 'Open Sans', sans-serif;
 //-----------------------------------
 //   Globals
 //-----------------------------------
-$global_background: #f1f1f1;
-$global_color: #1a1a1a;
+$global_background: #e6e6e6;
+$global_color: #212121;
 
 $global_font-family: $primary_font-family;
 $global_font-size: 20px;
@@ -128,101 +127,46 @@ $global_margin-bottom: 1.45em;
 
 
   // Grays //
-  $global_color_gray_01: #1a1a1a;                     // Default font color
-  $global_color_gray_02: #6f6f6f;                     // add_color_mediumgray | Captions | Blockquote
-  $global_color_gray_03: #808080;                     // Search Refine
-  $global_color_gray_04: #b1b1b1;                     // Vertical Tab Borders | CTA Primary Hover (sm+xs)
-  $global_color_gray_05: #e6e6e6;                     // HR | Panel Borders | Tab Borders | Separators
-  $global_color_gray_06: #f5f5f5;                     // add_background_gray | Table Striping | Panels
-
-
-  /*
-  #222       #1a1a1a     $global_color_gray_01
-  #333       #1a1a1a     $global_color_gray_01     xs: .carousel-inner > .item .carousel-caption   
-  #555       #1a1a1a     $global_color_gray_01     Form Field Text (555 is BS Default) & xs: .carousel-inner > .item .typeahead li:not(.active) *    
-  #616161    #1a1a1a     $global_color_gray_01
-  #666       #6f6f6f     $global_color_gray_02
-  #777       #6f6f6f     $global_color_gray_02
-  #848484    #808080     $global_color_gray_03
-  #999       #b1b1b1     $global_color_gray_04     sm+xs
-  #c1c1c1    #b1b1b1     $global_color_gray_04
-  #d2d2d2    #b1b1b1     $global_color_gray_04
-  #d6d4d4    #b1b1b1     $global_color_gray_04
-  #ccc       #b1b1b1     $global_color_gray_04
-  #d9d9d9    #e6e6e6     $global_color_gray_05
-  #e0e0e0    #e6e6e6     $global_color_gray_05
-  #e3e3e3    #e6e6e6     $global_color_gray_05
-  #e9e9e9    #f5f5f5     $global_color_gray_06
-  #f1f1f1    #f5f5f5     $global_color_gray_06
-  #f4f4f4    #f5f5f5     $global_color_gray_06
-  #f7f7f7    #f5f5f5     $global_color_gray_06
-  #fafafa    #f5f5f5     $global_color_gray_06
-  #f2dede    #faf0f0     $global_color_red_03
-  #fcf8e3    #fef9ed     $global_color_orange_05
-  #2d9923    #48a23f     $global_color_green_01
-  #008013    #48a23f     $global_color_green_01
-  #dff0d8    #f2f8f1     $global_color_green_03
-  #1aaae2    #00a9e0     $global_color_blue_01
-  #4db8ff    #00a9e0     $global_color_blue_01
-  #2f7eb2    #0076a8     $global_color_blue_02
-  #61a0c9    #0076a8     $global_color_blue_02
-  #005fce    #0076a8     $global_color_blue_02     sm+xs: Link color in - cta_item_general a
-  #123a55    Delete                                Background for Old Browsers
-  #1c4b6a    Delete                                Background for Old Browsers
-  #235e85    Delete                                Background for Old Browsers
-  #1c4b6a    #005487     $global_color_blue_03     Text
-  #004b87    #005487     $global_color_blue_03     sm+xs: BG color color in - .cta_item_secondary a
-  #428bca    #0076a8     $global_color_blue_02
-  #428bca    #005487     $global_color_blue_03     ONLY For: .horizontal_nav_container .navbar-nav > .open > a:focus
-  #d9edf7    #edf5f9     $global_color_blue_05
-  #e6ebef    #edf5f9     $global_color_blue_05     sm+xs: .navbar-default #topnav.navbar-nav > li > a:hover
-  #e6f2fa    #edf5f9     $global_color_blue_05
-  #521f77    #715091     $global_color_purple_02
-
-  
-  Special Case Swaps
-  Tags
-  #999       #0076a8     $global_color_blue_02     Remove Icon (Off)
-  #b1b1b1    #0076a8     $global_color_blue_02     Remove Icon (Off)
-  #5d5d5d    #005487     $global_color_blue_03     Remove Icon (On)
-
-  To Be resolved
-  .carousel-inner > .item .carousel-caption { padding: 20px 15px 0; background: #2a3a45; bottom: 0; color: $global_color_gray_01; left: 0; position: relative; right: 0; top: auto; }
-  */
+  $global_color_gray_01: #212121;                     // Gray 900: Default font color
+  $global_color_gray_02: #616161;                     // Gray 700: add_color_mediumgray | Captions | Blockquote
+  $global_color_gray_03: #7d7d7d;                     // Gray 600: Search Refine
+  $global_color_gray_04: #bfbfbf;                     // Gray 300: CTA Primary Hover (sm+xs)
+  $global_color_gray_05: #e6e6e6;                     // Gray 100: HR | Panel Borders | Tab Borders | Separators
+  $global_color_gray_06: #f5f5f5;                     // Gray 50:  add_background_gray | Table Striping | Panels
 
 
   // Reds //
-  $global_color_red_01: #b20000;                      // MATALB Code Coloring: untermstring
-  $global_color_red_02: #b7312c;                      // senary Color | Alerts (Error)
-  $global_color_red_03: #faf0f0;                      // Alerts (Error) Background
+  $global_color_red_01: #b7312c;                      // Red 600: MATALB Code Coloring: Undeterminated Strings | Errors | Syntax Error
+  $global_color_red_02: #b7312c;                      // Red 600: senary Color | Alerts (Error)
+  $global_color_red_03: #faf0f0;                      // Red 100: Alerts (Error) Background
 
 
   // Yellows | Oranges //
-  $global_color_orange_01: #c05708;                   // emphasize Color | color_darkorange
-  $global_color_orange_02: #c05708;                   // septenary Color | color_orange | Alerts (Warning)
-  $global_color_orange_03: #f2a900;                   // quaternary Color | color_yellow
-  $global_color_orange_04: #b28c00;                   // MATALB Code Coloring: syscmd
-  $global_color_orange_05: #fef9ed;                   // Alerts (Warning) Background
+  $global_color_orange_01: #c04c0b;                   // Orange 600: emphasize Color | color_darkorange
+  $global_color_orange_02: #c04c0b;                   // Orange 600: septenary Color | color_orange | Alerts (Warning)
+  $global_color_orange_03: #edb120;                   // Gold 600:   quaternary Color | color_yellow
+  $global_color_orange_04: #8b6606;                   // Yellow 600: MATALB Code Coloring: System Commands
+  $global_color_orange_05: #fef9ed;                   // Orange 100: Alerts (Warning) Background
 
 
   // Greens //
-  $global_color_green_01: #008013;                    // tertiary Color | color_green | Alert (Success) 
-  $global_color_green_02: #228b22;                    // MATALB Code Coloring: comment
-  $global_color_green_03: #f2f8f1;                    // Alert (Success) Background
+  $global_color_green_01: #008013;                    // Green 600: tertiary Color | color_green | Alert (Success) 
+  $global_color_green_02: #008013;                    // Green 600: MATALB Code Coloring: Comment | Success
+  $global_color_green_03: #f5fff2;                    // Green 100: Alert (Success) Background
 
 
   // Blues //
   $global_color_blue_01: #00a9e0;                     // quinary Color | color_aqua | Search Refine
-  $global_color_blue_02: #0076a8;                     // secondary Color | color_blue | Links | Buttons | Alerts (Info)
-  $global_color_blue_03: #005487;                     // color_darkblue | Visited Links | Buttons 
+  $global_color_blue_02: #0076a8;                     // Brand 1: secondary Color | color_blue | Links | Buttons | Alerts (Info)
+  $global_color_blue_03: #004b87;                     // Brand 2: color_darkblue | Visited Links | Buttons 
   $global_color_blue_04: rgba(102,175,233,0.6);       // Outline Focus Color (Mimic Chrome)
-  $global_color_blue_05: #edf5f9;                     // Alerts (Info) Background 
+  $global_color_blue_05: #e2f0ff;                     // Blue 100: Alerts (Info) Background 
 
 
   // Purples //
-  $global_color_purple_01: #0000ff;                   // MATALB Code Coloring: keyword
-  $global_color_purple_02: #715091;                   // color_purple
-  $global_color_purple_03: #a020f0;                   // MATALB Code Coloring: string
+  $global_color_purple_01: #0e00ff;                   // Cobalt 600: MATALB Code Coloring: Keyword
+  $global_color_purple_02: #7730ba;                   // Purple 800: color_purple
+  $global_color_purple_03: #a709f5;                   // Purple 600: MATALB Code Coloring: String
 
 
 //-----------------------------------
