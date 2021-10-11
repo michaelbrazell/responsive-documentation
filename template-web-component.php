@@ -84,6 +84,8 @@
                 <?php foreach($associated_elements as $post): ?>
                   <?php setup_postdata($post); ?>
 
+                  <div class="componet_wrapper element_<?php echo get_the_ID(); ?>">
+
                   <?php if (get_field('component_a11y')) { ?><span type="button" class="a11yified_component" data-toggle="tooltip" data-placement="right" title="This component includes A11y implementation information">A11y</span><?php } ?>
                   <h2 class="wp_responsive_doc<?php if (get_field('component_a11y')) { ?> a11yified_component<?php } ?>" id="element_<?php echo get_the_ID(); ?>"><!--Component Type: --><span class="component_type"><?php the_field('component_variation_name'); ?></span></h2>
 
@@ -228,6 +230,7 @@
                     <div class="clearfix add_margin_60"></div>
                   <?php } ?>                  
 
+                </div>
                 <?php endforeach; ?>
               <?php wp_reset_postdata(); ?>
               <?php } ?>
