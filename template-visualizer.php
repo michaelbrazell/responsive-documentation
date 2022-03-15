@@ -8,7 +8,7 @@
 <?php get_header(); ?>
 
     <div class="row-offcanvas row-offcanvas-left">
-      <div class="content_container template_visualizer">
+      <div class="content_container template_visualizer" id="content_container">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">

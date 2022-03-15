@@ -8,7 +8,7 @@
 <?php get_header(); ?>
 
     <div class="row-offcanvas row-offcanvas-left active">
-      <div class="content_container template_home">
+      <div class="content_container template_home" id="content_container">
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
