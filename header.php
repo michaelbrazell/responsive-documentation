@@ -127,21 +127,31 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
     /* ---- Lock Header on Scroll ---- */
     (function($) {
       $( document ).ready(function() {
-        $('#content_container').append($('#bs5_warning'));  
+        $('#content_container').prepend($('#bs5_warning'));  
       });
     })(jQuery);
     </script>        
   <?php } ?>
 
   <?php if ($_SESSION['bs5_only'] == "true") { ?>
-    <div class="container-fluid" id="bs5_only_warning">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="alert alert-warning"> <span class="alert_icon icon-alert-warning"></span>
-            <p class="alert_heading"><strong>ONLY Bootstrap 5 is being loaded on this page</strong></p>
+    <div styl="display:none">
+      <div class="container-fluid" id="bs5_only_warning">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="alert alert-warning"> <span class="alert_icon icon-alert-warning"></span>
+              <p class="alert_heading"><strong>ONLY Bootstrap 5 is being loaded on this page</strong></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script>      
+    /* ---- Lock Header on Scroll ---- */
+    (function($) {
+      $( document ).ready(function() {
+        $('#content_container').prepend($('#bs5_only_warning'));  
+      });
+    })(jQuery);
+    </script>  
   <?php } ?>  
 
