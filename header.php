@@ -40,7 +40,10 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 
     $css_gb = $css_gb . '?' . date("YmdHis", filemtime($css_gb_filetime));
   ?>
-  <link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
+<link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
+<?php if ($_GET['bs5'] == "true") { ?>
+  <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">  
+<?php } ?>
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7.css" rel="stylesheet" type="text/css">
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)">
