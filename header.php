@@ -124,9 +124,9 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
     <script>      
     /* ---- Lock Header on Scroll ---- */
     (function($) {
-
-      $('#bs5_warning').append($('#content_container'));  
-
+      $( document ).ready(function() {
+        $('#bs5_warning').append($('#content_container'));  
+      });
     })(jQuery);
     </script>        
   <?php } ?>
