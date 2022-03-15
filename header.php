@@ -14,8 +14,11 @@
 <?php
   if ($_GET['bs5'] == "true") {
     $_SESSION['bs5'] = "true";
+    $_SESSION['bs5_only'] = "";
+
   } elseif ($_GET['bs5_only'] == "true") {
     $_SESSION['bs5_only'] = "true";
+    $_SESSION['bs5'] = "";    
   }
 ?>
 
