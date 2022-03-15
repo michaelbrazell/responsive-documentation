@@ -113,7 +113,7 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 
   <?php if ($_SESSION['bs5'] == "true") { ?>
     <div styl="display:none">
-      <div class="container-fluid" id="bs5_warning">
+      <div class="container" id="bs5_warning">
         <div class="row">
           <div class="col-xs-12">
             <div class="alert alert-warning"> <span class="alert_icon icon-alert-warning"></span>
@@ -135,7 +135,7 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 
   <?php if ($_SESSION['bs5_only'] == "true") { ?>
     <div styl="display:none">
-      <div class="container-fluid" id="bs5_only_warning">
+      <div class="container" id="bs5_only_warning">
         <div class="row">
           <div class="col-xs-12">
             <div class="alert alert-warning"> <span class="alert_icon icon-alert-warning"></span>
