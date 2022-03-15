@@ -10,6 +10,15 @@
  */
 
 ?>
+<?php session_start(); ?>
+<?php
+  if ($_GET['bs5'] == "true") {
+    $_SESSION['bs5'] = "true";
+  } elseif ($_GET['bs5_only'] == "true") {
+    $_SESSION['bs5_only'] = "true";
+  }
+?>
+
 <?php
 // Set the track to pull all includes_content files from
 $ic_track = get_field('release_track', 102);
@@ -41,10 +50,10 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
     $css_gb = $css_gb . '?' . date("YmdHis", filemtime($css_gb_filetime));
   ?>
 <link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
-<?php if (($_GET['bs5'] == "true") || ($_GET['bs5_only'] == "true")) { ?>
+<?php if (($_SESSION['bs5'] == "true") || ($_SESSION['bs5_only'] == "true")) { ?>
   <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">  
 <?php } ?>
-<?php if (($_GET['bs5_only']) && ($_GET['bs5_only'] == "true")) { ?>
+<?php if ($_SESSION['bs5_only'] == "true") { ?>
 <?php } else { ?>
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
 <?php } ?>
@@ -101,3 +110,28 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
   </div>
 
 	<div id="content" class="site-content">
+
+  <?php if ($_SESSION['bs5'] == "true") { ?>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="alert alert-warning"> <span class="alert_icon icon-alert-warning"></span>
+            <p class="alert_heading"><strong>Bootstrap 5 + Bootstrap 3 are being loaded on this page</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php } ?>
+
+  <?php if ($_SESSION['bs5_only'] == "true") { ?>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="alert alert-warning"> <span class="alert_icon icon-alert-warning"></span>
+            <p class="alert_heading"><strong>ONLY Bootstrap 5 is being loaded on this page</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php } ?>  
+
