@@ -121,9 +121,14 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
         </div>
       </div>
     </div>
-    <script>
-      $('#bs5_warning').append($('.content_container'));
-    </script>
+    <script>      
+    /* ---- Lock Header on Scroll ---- */
+    (function($) {
+
+      $('#bs5_warning').append($('.content_container'));  
+
+    })(jQuery);
+    </script>        
   <?php } ?>
 
   <?php if ($_SESSION['bs5_only'] == "true") { ?>
