@@ -44,7 +44,7 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 <?php if (($_GET['bs5'] == "true") || ($_GET['bs5_only'] == "true")) { ?>
   <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">  
 <?php } ?>
-<?php if (($_GET['bs5']) && ($_GET['bs5_only'] == "true")) { ?>
+<?php if (($_GET['bs5_only']) && ($_GET['bs5_only'] == "true")) { ?>
 <?php } else { ?>
 <link href="<?php echo $ic_track; ?>/includes_content/responsive/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
 <?php } ?>
