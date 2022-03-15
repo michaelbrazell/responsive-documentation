@@ -16,9 +16,13 @@
     $_SESSION['bs5'] = "true";
     $_SESSION['bs5_only'] = "";
 
-  } elseif ($_GET['bs5_only'] == "true") {
+  } 
+  if ($_GET['bs5_only'] == "true") {
     $_SESSION['bs5_only'] = "true";
     $_SESSION['bs5'] = "";    
+  }
+  if (($_GET['bs5'] == "reset") || ($_GET['bs5_only'] == "reset")) {
+    session_destroy();
   }
 ?>
 
