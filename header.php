@@ -71,7 +71,7 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
             </div>
             <div class="navbar-header">
               <a class="navbar-brand" href="<?php echo site_url(); ?>">MathWorks Web Standards</a>
-              <span class="includes_contract_track">AEM Customer UI track: <?php echo $ic_track_mini; ?></span>
+              <span class="includes_contract_track">AEM Customer UI Track: <?php echo $ic_track_mini; ?></span>
             </div>
           </div>
           <div class="col-sm-4 hidden-xs">
