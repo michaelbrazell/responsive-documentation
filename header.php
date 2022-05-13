@@ -63,8 +63,8 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 
 ?>
 
-<link rel="stylesheet" href="/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common.min.${latest_cache_var}.css" type="text/css">
-<link rel="stylesheet" href="/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common/footer.min.${latest_cache_var}.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common.min.<?php echo $cache_breaking; ?>.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common/footer.min.<?php echo $cache_breaking; ?>.css" type="text/css">
 <link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
 <script src="<?php echo get_template_directory_uri(); ?>/js/responsive_doc.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/offcanvas.js"></script>
