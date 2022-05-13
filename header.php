@@ -71,7 +71,7 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
             </div>
             <div class="navbar-header">
               <a class="navbar-brand" href="<?php echo site_url(); ?>">MathWorks Web Standards</a>
-              <span class="includes_contract_track">inclues_content track: <?php echo $ic_track_mini; ?></span>
+              <span class="includes_contract_track">AEM Customer UI track: <?php echo $ic_track_mini; ?></span>
             </div>
           </div>
           <div class="col-sm-4 hidden-xs">
@@ -89,48 +89,3 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
   </div>
 
 	<div id="content" class="site-content">
-
-  <?php if ($_SESSION['bs5'] == "true") { ?>
-    <div styl="display:none">
-      <div class="container" id="bs5_warning">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="alert alert-warning"> <span class="alert_icon icon-alert-warning"></span>
-              <p class="alert_heading"><strong>Bootstrap 5 + Bootstrap 3 are being loaded on this page</strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>      
-    /* ---- Lock Header on Scroll ---- */
-    (function($) {
-      $( document ).ready(function() {
-        $('#content_container').prepend($('#bs5_warning'));  
-      });
-    })(jQuery);
-    </script>        
-  <?php } ?>
-
-  <?php if ($_SESSION['bs5_only'] == "true") { ?>
-    <div styl="display:none">
-      <div class="container" id="bs5_only_warning">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="alert alert-warning"> <span class="alert_icon icon-alert-warning"></span>
-              <p class="alert_heading"><strong>ONLY Bootstrap 5 is being loaded on this page</strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>      
-    /* ---- Lock Header on Scroll ---- */
-    (function($) {
-      $( document ).ready(function() {
-        $('#content_container').prepend($('#bs5_only_warning'));  
-      });
-    })(jQuery);
-    </script>  
-  <?php } ?>  
-
