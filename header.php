@@ -40,49 +40,37 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 <link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
-  <?php 
-    //Dynamically Remove CSS Caching
-    $css_gb_file = 'responsive_doc.css';
+<?php 
+  //Dynamically Remove CSS Caching
+  $css_gb_file = 'responsive_doc.css';
 
-    $theme_path = get_template_directory_uri();
-    $theme_css_path = $theme_path . '/css/';
+  $theme_path = get_template_directory_uri();
+  $theme_css_path = $theme_path . '/css/';
 
-    $css_gb = $theme_css_path . $css_gb_file;
+  $css_gb = $theme_css_path . $css_gb_file;
 
-    $filetime_path = strpos($theme_css_path, 'wp-content');
-    $filetime_path = substr($theme_css_path, $filetime_path);
+  $filetime_path = strpos($theme_css_path, 'wp-content');
+  $filetime_path = substr($theme_css_path, $filetime_path);
 
-    $css_gb_filetime = $filetime_path . $css_gb_file;
+  $css_gb_filetime = $filetime_path . $css_gb_file;
 
-    $css_gb = $css_gb . '?' . date("YmdHis", filemtime($css_gb_filetime));
-  ?>
-<link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
-<?php if (($_SESSION['bs5'] == "true") || ($_SESSION['bs5_only'] == "true")) { ?>
-  <link href="<?php echo get_template_directory_uri(); ?>/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">  
-<?php } ?>
-<?php if ($_SESSION['bs5_only'] == "true") { ?>
-<?php } else { ?>
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
-<?php } ?>
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7.css" rel="stylesheet" type="text/css">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_sm+xs.css" rel="stylesheet" media="screen and (max-width: 991px)">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)">
-<link href="<?php echo $ic_track; ?>/includes_content/responsive/css/site7_xs.css" rel="stylesheet" media="screen and (max-width: 767px)">
-<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/jquery/jquery-latest.js"></script>
-<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/bootstrap/bootstrap.min.js"></script>
-<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/global.js"></script>
-<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/anchor.js"></script>
-<script src="<?php echo $ic_track; ?>/includes_content/responsive/scripts/bootstrap/responsive-tabs.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700italic' rel='stylesheet' type='text/css'>
+  $css_gb = $css_gb . '?' . date("YmdHis", filemtime($css_gb_filetime));
+
+
+  $cache_breaking = date('YmdG') . "0000000";
+
+  echo $cache_breaking;
+
+?>
+
+<link rel="stylesheet" href="/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common.min.${latest_cache_var}.css" type="text/css">
+<link rel="stylesheet" href="/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common/footer.min.${latest_cache_var}.css" type="text/css">
 <link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
 <script src="<?php echo get_template_directory_uri(); ?>/js/responsive_doc.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/offcanvas.js"></script>
 <!-- BEGIN Adobe DTM -->
 <script src="//assets.adobedtm.com/d0cc0600946eb3957f703b9fe43c3590597a8c2c/satelliteLib-e8d23c2e444abadc572df06537e2def59c01db09.js" async></script>
 <!-- END Adobe DTM -->
-<link href="https://use.typekit.net/xvy5baa.css" rel="stylesheet">
 </head>
 <body <?php body_class(); ?>>
 <div id="page" class="site">
