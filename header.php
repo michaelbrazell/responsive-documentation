@@ -10,21 +10,6 @@
  */
 
 ?>
-<?php session_start(); ?>
-<?php
-  if ($_GET['bs5'] == "true") {
-    $_SESSION['bs5'] = "true";
-    $_SESSION['bs5_only'] = "";
-
-  } 
-  if ($_GET['bs5_only'] == "true") {
-    $_SESSION['bs5_only'] = "true";
-    $_SESSION['bs5'] = "";    
-  }
-  if (($_GET['bs5'] == "reset") || ($_GET['bs5_only'] == "reset")) {
-    session_destroy();
-  }
-?>
 
 <?php
 // Set the track to pull all includes_content files from
@@ -59,12 +44,10 @@ $ic_track_mini = rtrim($ic_track_mini, ".mathworks.com");
 
   $cache_breaking = date('YmdG') . "0000000";
 
-  echo $cache_breaking;
-
 ?>
 
-<link rel="stylesheet" href="/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common.min.<?php echo $cache_breaking; ?>.css" type="text/css">
-<link rel="stylesheet" href="/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common/footer.min.<?php echo $cache_breaking; ?>.css" type="text/css">
+<link rel="stylesheet" href="<?php echo $ic_track; ?>/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common.min.<?php echo $cache_breaking; ?>.css" type="text/css">
+<link rel="stylesheet" href="<?php echo $ic_track; ?>/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common/footer.min.<?php echo $cache_breaking; ?>.css" type="text/css">
 <link href="<?php echo $css_gb; ?>" rel="stylesheet" type="text/css">
 <script src="<?php echo get_template_directory_uri(); ?>/js/responsive_doc.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/offcanvas.js"></script>
